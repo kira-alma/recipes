@@ -99,15 +99,16 @@
   .gear-btn:hover { color: var(--accent); border-color: var(--accent-soft); }
   .gear-btn.active { background: var(--ok); color: white; border-color: var(--ok); }
 
-  /* Edit pencil on cards */
+  /* Edit pencil on cards — positioned at top-left in RTL so it doesn't overlap the title */
   .card .edit-pencil {
-    position: absolute; top: 8px; inset-inline-start: 8px;
+    position: absolute; top: 8px; inset-inline-end: 8px;
     background: white; border: 1px solid var(--border); border-radius: 50%;
     width: 28px; height: 28px; cursor: pointer; font-size: 0.85rem;
     color: var(--ink-soft); display: none; align-items: center; justify-content: center;
-    z-index: 2; padding: 0;
+    z-index: 2; padding: 0; opacity: 0.7;
   }
   .edit-mode .card .edit-pencil { display: flex; }
+  .card:hover .edit-pencil { opacity: 1; }
   .card .edit-pencil:hover { color: var(--accent); border-color: var(--accent); }
 
   /* "Add recipe" button per category */
