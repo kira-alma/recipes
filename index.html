@@ -10,6 +10,7 @@
     --bg: #fff8f0; --bg-soft: #fef3e2; --card: #ffffff;
     --ink: #1f2937; --ink-soft: #4b5563; --ink-faint: #9ca3af;
     --accent: #c2410c; --accent-soft: #fed7aa; --border: #e5e7eb;
+    --ok: #16a34a; --err: #dc2626;
     --shadow: 0 2px 6px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.04);
     --shadow-lg: 0 10px 30px rgba(0,0,0,0.15), 0 4px 10px rgba(0,0,0,0.08);
   }
@@ -87,16 +88,87 @@
   .empty { text-align: center; padding: 60px 16px; color: var(--ink-faint); }
   .empty .big { font-size: 3rem; margin-bottom: 8px; }
   .loading { text-align: center; padding: 80px 16px; color: var(--ink-faint); font-size: 0.95rem; }
+
+  /* Editor: gear icon, lock state */
+  .gear-btn {
+    position: absolute; top: 14px; inset-inline-end: 14px;
+    background: white; border: 1px solid var(--border); border-radius: 999px;
+    width: 36px; height: 36px; cursor: pointer; font-size: 1.05rem;
+    color: var(--ink-soft); transition: all 0.12s; box-shadow: var(--shadow);
+  }
+  .gear-btn:hover { color: var(--accent); border-color: var(--accent-soft); }
+  .gear-btn.active { background: var(--ok); color: white; border-color: var(--ok); }
+
+  /* Edit pencil on cards */
+  .card .edit-pencil {
+    position: absolute; top: 8px; inset-inline-start: 8px;
+    background: white; border: 1px solid var(--border); border-radius: 50%;
+    width: 28px; height: 28px; cursor: pointer; font-size: 0.85rem;
+    color: var(--ink-soft); display: none; align-items: center; justify-content: center;
+    z-index: 2; padding: 0;
+  }
+  .edit-mode .card .edit-pencil { display: flex; }
+  .card .edit-pencil:hover { color: var(--accent); border-color: var(--accent); }
+
+  /* "Add recipe" button per category */
+  .add-recipe-btn {
+    display: none; align-items: center; gap: 6px;
+    background: white; border: 1.5px dashed var(--accent-soft); color: var(--accent);
+    padding: 6px 12px; border-radius: 999px; cursor: pointer;
+    font-family: inherit; font-size: 0.85rem; font-weight: 600;
+    margin-inline-start: 6px;
+  }
+  .edit-mode .add-recipe-btn { display: inline-flex; }
+  .add-recipe-btn:hover { background: var(--accent-soft); }
+
+  /* Form modal */
+  .form-row { margin: 0 0 14px; }
+  .form-row label { display: block; font-size: 0.85rem; font-weight: 600; color: var(--ink-soft); margin-bottom: 4px; }
+  .form-row input, .form-row textarea, .form-row select {
+    width: 100%; padding: 9px 12px; font-size: 0.95rem; font-family: inherit;
+    border: 1.5px solid var(--border); border-radius: 8px; background: #fff; color: var(--ink);
+  }
+  .form-row input:focus, .form-row textarea:focus, .form-row select:focus {
+    outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(194,65,12,0.12);
+  }
+  .form-row textarea { min-height: 200px; resize: vertical; line-height: 1.5; font-family: 'SF Mono', Menlo, Consolas, monospace; font-size: 0.88rem; }
+  .form-row .hint { font-size: 0.78rem; color: var(--ink-faint); margin-top: 4px; }
+  .form-actions { display: flex; gap: 8px; justify-content: flex-start; align-items: center; margin-top: 18px; flex-wrap: wrap; }
+  .btn {
+    padding: 9px 18px; border: 1.5px solid var(--border); background: white; color: var(--ink);
+    border-radius: 8px; cursor: pointer; font-family: inherit; font-size: 0.92rem; font-weight: 600;
+    transition: all 0.12s;
+  }
+  .btn:hover { border-color: var(--ink-soft); }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: white; }
+  .btn.primary:hover { background: #9a3208; border-color: #9a3208; }
+  .btn.danger { background: white; color: var(--err); border-color: var(--err); margin-inline-start: auto; }
+  .btn.danger:hover { background: var(--err); color: white; }
+  .btn[disabled] { opacity: 0.5; cursor: not-allowed; }
+
+  /* Toast */
+  .toast {
+    position: fixed; bottom: 24px; inset-inline-end: 24px; z-index: 200;
+    background: var(--ink); color: white; padding: 10px 18px; border-radius: 10px;
+    font-size: 0.9rem; box-shadow: var(--shadow-lg); opacity: 0; transition: opacity 0.25s, transform 0.25s;
+    transform: translateY(20px); pointer-events: none; max-width: 92vw;
+  }
+  .toast.show { opacity: 1; transform: translateY(0); }
+  .toast.ok { background: var(--ok); }
+  .toast.err { background: var(--err); }
+
   @media (max-width: 480px) {
     header.hero h1 { font-size: 1.55rem; }
     .grid { grid-template-columns: 1fr; }
     .modal { padding: 20px 18px; }
+    .gear-btn { top: 10px; inset-inline-end: 10px; }
   }
 </style>
 </head>
 <body>
 
-<header class="hero">
+<header class="hero" style="position:relative">
+  <button class="gear-btn" id="gear-btn" title="הגדרות עריכה">⚙️</button>
   <h1>🥘 ספר המתכונים של קירה</h1>
   <div class="search-wrap">
     <input id="search" type="text" placeholder="חיפוש מתכון... למשל: עוף, סלט, אורז, שוקולד" />
@@ -108,9 +180,68 @@
 
 <main id="content"><div class="loading">⏳ טוען מתכונים…</div></main>
 
+<!-- Recipe view modal -->
 <div class="modal-bg" id="modal-bg">
   <div class="modal" id="modal"></div>
 </div>
+
+<!-- Auth (PAT entry) modal -->
+<div class="modal-bg" id="auth-bg">
+  <div class="modal" id="auth-modal" style="max-width:520px">
+    <button class="close" id="auth-close" title="סגירה">✕</button>
+    <h2 class="recipe-title">🔐 הפעלת מצב עריכה</h2>
+    <p style="color:var(--ink-soft);font-size:0.92rem;margin:6px 0 16px">
+      כדי לאפשר עריכת מתכונים, יש להזין <strong>GitHub Personal Access Token</strong>.
+      הטוקן נשמר אך ורק במכשיר שלך (localStorage) ולא נשלח לאף מקום חוץ מ-GitHub עצמו.
+    </p>
+    <div class="form-row">
+      <label for="pat-input">Personal Access Token</label>
+      <input id="pat-input" type="password" placeholder="ghp_… או github_pat_…" autocomplete="off"/>
+      <div class="hint">
+        <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">פתיחת מסך יצירת טוקן ב-GitHub ↗</a>
+        — בחרי "Fine-grained token", הרשאת <strong>Contents: Read and write</strong> על המאגר <code id="repo-display"></code>.
+      </div>
+    </div>
+    <div class="form-actions">
+      <button class="btn primary" id="auth-save">שמירה</button>
+      <button class="btn" id="auth-cancel">ביטול</button>
+      <button class="btn danger" id="auth-logout" style="display:none">התנתקות</button>
+    </div>
+  </div>
+</div>
+
+<!-- Edit/Add recipe form modal -->
+<div class="modal-bg" id="form-bg">
+  <div class="modal" id="form-modal">
+    <button class="close" id="form-close" title="סגירה">✕</button>
+    <h2 class="recipe-title" id="form-title">עריכת מתכון</h2>
+    <div class="form-row">
+      <label for="f-title">כותרת</label>
+      <input id="f-title" type="text" placeholder="שם המתכון"/>
+    </div>
+    <div class="form-row">
+      <label for="f-cat">קטגוריה</label>
+      <select id="f-cat"></select>
+    </div>
+    <div class="form-row">
+      <label for="f-url">קישור למקור (אופציונלי)</label>
+      <input id="f-url" type="url" placeholder="https://…"/>
+      <div class="hint">תווית המקור והאייקון יזוהו אוטומטית לפי הדומיין. השאירי ריק למתכון מודפס.</div>
+    </div>
+    <div class="form-row">
+      <label for="f-content">תוכן המתכון</label>
+      <textarea id="f-content" placeholder="מצרכים, הוראות הכנה...&#10;&#10;תוכן רגיל הופך לפסקאות, **כוכביות** לטקסט מודגש, ## בתחילת שורה הופך לכותרת קטנה."></textarea>
+      <div class="hint">פורמט: שורה ריקה = פסקה חדשה · <code>**מודגש**</code> · <code>## כותרת</code> · <code>---</code> = קו מפריד</div>
+    </div>
+    <div class="form-actions">
+      <button class="btn primary" id="f-save">שמירה</button>
+      <button class="btn" id="f-cancel">ביטול</button>
+      <button class="btn danger" id="f-delete" style="display:none">מחיקה</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
 
 <script>
 const CATEGORIES = [["all", "הכל", "🍽️", "#6b7280"], ["breads", "לחמים ומאפים", "🍞", "#d97706"], ["salads", "סלטים", "🥗", "#16a34a"], ["soups", "מרקים", "🍲", "#dc2626"], ["rice", "אורז ודגנים", "🍚", "#ca8a04"], ["chicken", "עוף", "🍗", "#ea580c"], ["meat", "בשרים", "🥩", "#b91c1c"], ["meatballs", "קציצות", "🍡", "#7f1d1d"], ["fish", "דגים", "🐟", "#0891b2"], ["pasta", "פסטה ואטריות", "🍝", "#c2410c"], ["eggs_dairy", "פשטידות", "🥧", "#facc15"], ["sauces", "רטבים וממרחים", "🥄", "#9333ea"], ["desserts", "עוגות וקינוחים", "🍰", "#db2777"], ["drinks", "משקאות", "☕", "#7c2d12"], ["other", "שונות", "✨", "#475569"]];
@@ -281,6 +412,385 @@ document.getElementById('search').addEventListener('input', (e) => {
 });
 
 function render() { renderCats(); renderRecipes(); }
+
+// ============================================================
+// EDITOR — GitHub API integration
+// ============================================================
+
+// Auto-detect owner/repo from current URL (works for username.github.io/repo/)
+function detectRepo() {
+  const host = location.hostname;
+  const segments = location.pathname.split('/').filter(Boolean);
+  let owner = null, repo = null;
+  if (host.endsWith('.github.io')) {
+    owner = host.split('.')[0];
+    repo = segments[0] || null;
+  }
+  // Fallback: localStorage override (in case auto-detect fails)
+  owner = localStorage.getItem('gh-owner') || owner;
+  repo = localStorage.getItem('gh-repo') || repo;
+  return { owner, repo };
+}
+
+const TOKEN_KEY = 'kira-recipes-pat';
+function getToken() { return localStorage.getItem(TOKEN_KEY) || null; }
+function setToken(t) {
+  if (t) localStorage.setItem(TOKEN_KEY, t);
+  else localStorage.removeItem(TOKEN_KEY);
+  applyAuthState();
+}
+function isEditMode() { return !!getToken(); }
+function applyAuthState() {
+  document.body.classList.toggle('edit-mode', isEditMode());
+  document.getElementById('gear-btn').classList.toggle('active', isEditMode());
+  document.getElementById('auth-logout').style.display = isEditMode() ? 'inline-flex' : 'none';
+}
+
+// Toast helper
+let toastTimer = null;
+function toast(msg, kind = 'ok') {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.className = 'toast show ' + kind;
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => { el.className = 'toast ' + kind; }, 3200);
+}
+
+// Base64 UTF-8 helpers (GitHub Contents API uses base64)
+function utf8ToB64(s) {
+  return btoa(String.fromCharCode.apply(null, new TextEncoder().encode(s)));
+}
+function b64ToUtf8(s) {
+  // GitHub returns base64 with newlines
+  const clean = s.replace(/\n/g, '');
+  const bytes = Uint8Array.from(atob(clean), c => c.charCodeAt(0));
+  return new TextDecoder().decode(bytes);
+}
+
+// GitHub API: fetch current recipes.json file (returns { content, sha })
+async function ghFetchRecipesFile() {
+  const { owner, repo } = detectRepo();
+  if (!owner || !repo) throw new Error('לא מצליח לזהות את שם המאגר ב-GitHub');
+  const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/recipes.json`, {
+    headers: { 'Authorization': `Bearer ${getToken()}`, 'Accept': 'application/vnd.github+json' }
+  });
+  if (!res.ok) throw new Error('GET נכשל: ' + res.status);
+  const j = await res.json();
+  return { json: JSON.parse(b64ToUtf8(j.content)), sha: j.sha };
+}
+
+// GitHub API: commit a new recipes.json
+async function ghCommitRecipesFile(newJson, sha, message) {
+  const { owner, repo } = detectRepo();
+  const body = {
+    message: message || 'update recipes',
+    content: utf8ToB64(JSON.stringify(newJson, null, 2)),
+    sha: sha,
+  };
+  const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/recipes.json`, {
+    method: 'PUT',
+    headers: {
+      'Authorization': `Bearer ${getToken()}`,
+      'Accept': 'application/vnd.github+json',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(body)
+  });
+  if (!res.ok) {
+    const err = await res.text();
+    throw new Error('PUT נכשל: ' + res.status + ' — ' + err.slice(0, 200));
+  }
+  return await res.json();
+}
+
+// Port of format_recipe_content: turn plain-text recipe into HTML
+function renderRecipeHtml(text) {
+  if (!text) return '';
+  let safe = text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  safe = safe.replace(/\*\*([^*\n]+)\*\*/g, '<strong>$1</strong>');
+  safe = safe.replace(/(^|[^*])\*([^*\n]+)\*(?!\*)/g, '$1<strong>$2</strong>');
+  const lines = safe.split('\n').map(line => {
+    line = line.replace(/\s+$/, '').replace(/\s*&lt;This message was edited&gt;\s*$/, '');
+    const m = line.match(/^(#{1,6})\s+(.+)$/);
+    if (m) return `<h4 class="rcp-h4">${m[2]}</h4>`;
+    if (line.trim() === '---') return '<hr class="rcp-hr"/>';
+    return line;
+  });
+  return lines.join('\n').split(/\n\s*\n/).map(p => {
+    p = p.trim();
+    if (!p) return '';
+    if (p.startsWith('<h4') || p.startsWith('<hr')) return p;
+    return '<p>' + p.replace(/\n/g, '<br>') + '</p>';
+  }).filter(Boolean).join('\n');
+}
+
+// Detect source label/icon from URL
+function deriveSrc(url) {
+  if (!url) return { type: 'typed', label: 'מתכון מודפס', icon: '✍️' };
+  const u = url.toLowerCase();
+  if (/facebook\.com\/(reel|share\/r)/.test(u)) return { type: 'facebook', label: 'סרטון פייסבוק', icon: '🎬' };
+  if (u.includes('instagram.com')) return { type: 'instagram', label: 'סרטון אינסטגרם', icon: '🎥' };
+  if (u.includes('tiktok.com')) return { type: 'tiktok', label: 'סרטון טיקטוק', icon: '🎵' };
+  if (u.includes('youtube.com') || u.includes('youtu.be')) return { type: 'youtube', label: 'סרטון יוטיוב', icon: '▶️' };
+  if (u.includes('share.google')) return { type: 'share', label: 'קישור משותף', icon: '🔗' };
+  if (u.includes('10dakot.co.il')) return { type: 'site', label: '10 דקות', icon: '🍳' };
+  if (u.includes('kerenagam.co.il')) return { type: 'site', label: 'קרן אגם', icon: '🍳' };
+  if (u.includes('ronyohananov.com')) return { type: 'site', label: 'רוני יוחננוב', icon: '🍳' };
+  if (u.includes('mako.co.il')) return { type: 'site', label: 'מאקו', icon: '🍳' };
+  if (u.includes('haaretz.co.il')) return { type: 'site', label: 'הארץ', icon: '🍳' };
+  if (u.includes('foody.co.il')) return { type: 'site', label: 'Foody', icon: '🍳' };
+  if (u.includes('yummio.co.il')) return { type: 'site', label: 'Yummio', icon: '🍳' };
+  if (u.includes('aidells.com')) return { type: 'site', label: 'Aidells', icon: '🍳' };
+  return { type: 'site', label: 'אתר חיצוני', icon: '🍳' };
+}
+
+// ===== Auth modal =====
+function openAuth() {
+  document.getElementById('auth-bg').classList.add('open');
+  const r = detectRepo();
+  document.getElementById('repo-display').textContent = (r.owner && r.repo) ? `${r.owner}/${r.repo}` : '(repo לא זוהה)';
+  document.getElementById('pat-input').value = '';
+  document.getElementById('pat-input').focus();
+}
+function closeAuth() {
+  document.getElementById('auth-bg').classList.remove('open');
+}
+document.getElementById('gear-btn').addEventListener('click', openAuth);
+document.getElementById('auth-close').addEventListener('click', closeAuth);
+document.getElementById('auth-cancel').addEventListener('click', closeAuth);
+document.getElementById('auth-bg').addEventListener('click', (e) => {
+  if (e.target.id === 'auth-bg') closeAuth();
+});
+document.getElementById('auth-save').addEventListener('click', () => {
+  const t = document.getElementById('pat-input').value.trim();
+  if (!t) { toast('הדבק טוקן ולחץ שמירה', 'err'); return; }
+  setToken(t);
+  closeAuth();
+  toast('מצב עריכה פעיל ✓', 'ok');
+  render();
+});
+document.getElementById('auth-logout').addEventListener('click', () => {
+  setToken(null);
+  closeAuth();
+  toast('יצאת ממצב עריכה');
+  render();
+});
+
+// ===== Edit/Add form modal =====
+let formContext = null;  // { mode: 'edit'|'add', id?: number, cat?: string }
+
+function populateCategoryDropdown() {
+  const sel = document.getElementById('f-cat');
+  sel.innerHTML = '';
+  for (const [key, label, emoji] of CATEGORIES) {
+    if (key === 'all') continue;
+    const opt = document.createElement('option');
+    opt.value = key;
+    opt.textContent = `${emoji} ${label}`;
+    sel.appendChild(opt);
+  }
+}
+
+function openFormForEdit(id) {
+  if (!isEditMode()) { openAuth(); return; }
+  const r = RECIPES.find(x => x.id === id);
+  if (!r) return;
+  formContext = { mode: 'edit', id: id };
+  document.getElementById('form-title').textContent = 'עריכת מתכון';
+  document.getElementById('f-title').value = r.title;
+  document.getElementById('f-cat').value = r.cat;
+  document.getElementById('f-url').value = (r.urls && r.urls[0]) || '';
+  // Editable text: derived from r.html or kept as-is if we have raw plain text
+  document.getElementById('f-content').value = r._raw || htmlBackToText(r.html);
+  document.getElementById('f-delete').style.display = 'inline-flex';
+  document.getElementById('form-bg').classList.add('open');
+  document.getElementById('f-title').focus();
+}
+
+function openFormForAdd(cat) {
+  if (!isEditMode()) { openAuth(); return; }
+  formContext = { mode: 'add', cat: cat };
+  document.getElementById('form-title').textContent = 'מתכון חדש';
+  document.getElementById('f-title').value = '';
+  document.getElementById('f-cat').value = cat || 'other';
+  document.getElementById('f-url').value = '';
+  document.getElementById('f-content').value = '';
+  document.getElementById('f-delete').style.display = 'none';
+  document.getElementById('form-bg').classList.add('open');
+  document.getElementById('f-title').focus();
+}
+
+function closeForm() {
+  document.getElementById('form-bg').classList.remove('open');
+  formContext = null;
+}
+
+// Rough HTML→text conversion so editing existing recipes shows reasonable plain text
+function htmlBackToText(h) {
+  if (!h) return '';
+  let s = h;
+  s = s.replace(/<hr[^>]*\/?>/g, '\n---\n');
+  s = s.replace(/<h4[^>]*>(.*?)<\/h4>/g, '\n## $1\n');
+  s = s.replace(/<strong>(.*?)<\/strong>/g, '**$1**');
+  s = s.replace(/<br\s*\/?>/g, '\n');
+  s = s.replace(/<\/p>\s*<p[^>]*>/g, '\n\n');
+  s = s.replace(/<\/?p[^>]*>/g, '');
+  s = s.replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&quot;/g, '"').replace(/&#39;/g, "'");
+  return s.trim();
+}
+
+document.getElementById('form-close').addEventListener('click', closeForm);
+document.getElementById('f-cancel').addEventListener('click', closeForm);
+document.getElementById('form-bg').addEventListener('click', (e) => {
+  if (e.target.id === 'form-bg') closeForm();
+});
+
+document.getElementById('f-save').addEventListener('click', async () => {
+  if (!formContext) return;
+  const title = document.getElementById('f-title').value.trim();
+  const cat = document.getElementById('f-cat').value;
+  const url = document.getElementById('f-url').value.trim();
+  const content = document.getElementById('f-content').value;
+
+  if (!title) { toast('צריך לתת כותרת', 'err'); return; }
+
+  const btn = document.getElementById('f-save');
+  btn.disabled = true; btn.textContent = '⏳ שומר…';
+
+  try {
+    const { json: current, sha } = await ghFetchRecipesFile();
+
+    if (formContext.mode === 'edit') {
+      const i = current.findIndex(r => r.id === formContext.id);
+      if (i < 0) throw new Error('המתכון לא נמצא — אולי הוסר בינתיים');
+      const existing = current[i];
+      const urls = url ? [url] : (existing.urls && existing.urls.filter(u => u !== url)) || [];
+      current[i] = {
+        ...existing,
+        title,
+        cat,
+        cats: [cat, ...(existing.cats || []).filter(c => c !== cat)],
+        urls: url ? [url] : [],
+        src: deriveSrc(url),
+        html: renderRecipeHtml(content),
+        _raw: content,
+        s: (title + ' ' + content).toLowerCase(),
+      };
+      await ghCommitRecipesFile(current, sha, `edit: ${title}`);
+    } else {
+      const maxId = current.reduce((m, r) => Math.max(m, r.id || 0), 0);
+      const today = new Date();
+      const dateStr = `${today.getMonth()+1}/${today.getDate()}/${String(today.getFullYear()).slice(2)}`;
+      const newRecipe = {
+        id: maxId + 1,
+        title,
+        date: dateStr,
+        cat,
+        cats: [cat],
+        src: deriveSrc(url),
+        urls: url ? [url] : [],
+        imgs: [],
+        html: renderRecipeHtml(content),
+        _raw: content,
+        s: (title + ' ' + content).toLowerCase(),
+      };
+      current.push(newRecipe);
+      await ghCommitRecipesFile(current, sha, `add: ${title}`);
+    }
+
+    toast(formContext.mode === 'edit' ? 'נשמר ✓' : 'נוסף ✓', 'ok');
+    closeForm();
+    // Use the just-saved data directly (avoids GitHub Pages CDN cache lag)
+    RECIPES = current;
+    render();
+  } catch (err) {
+    console.error(err);
+    toast('שגיאה: ' + err.message, 'err');
+  } finally {
+    btn.disabled = false; btn.textContent = 'שמירה';
+  }
+});
+
+document.getElementById('f-delete').addEventListener('click', async () => {
+  if (!formContext || formContext.mode !== 'edit') return;
+  const r = RECIPES.find(x => x.id === formContext.id);
+  if (!r) return;
+  if (!confirm(`למחוק את "${r.title}"?\nהפעולה תיווצר כקומיט ב-GitHub וניתן יהיה לשחזר אותה משם.`)) return;
+
+  const btn = document.getElementById('f-delete');
+  btn.disabled = true; btn.textContent = '⏳';
+  try {
+    const { json: current, sha } = await ghFetchRecipesFile();
+    const filtered = current.filter(rec => rec.id !== formContext.id);
+    if (filtered.length === current.length) throw new Error('המתכון כבר לא קיים בקובץ');
+    await ghCommitRecipesFile(filtered, sha, `delete: ${r.title}`);
+    toast('נמחק ✓', 'ok');
+    closeForm();
+    RECIPES = filtered;
+    render();
+  } catch (err) {
+    console.error(err);
+    toast('שגיאה: ' + err.message, 'err');
+  } finally {
+    btn.disabled = false; btn.textContent = 'מחיקה';
+  }
+});
+
+// Hook edit pencils and add-buttons into the existing render flow
+const origCardHtml = cardHtml;
+cardHtml = function(r) {
+  const base = origCardHtml(r);
+  return base.replace('<div class="card"',
+    `<div class="card"`
+  ).replace(
+    /<\/div>\s*$/,
+    `<button class="edit-pencil" data-edit="${r.id}" title="עריכה">✏️</button></div>`
+  );
+};
+
+const origRenderRecipes = renderRecipes;
+renderRecipes = function() {
+  origRenderRecipes();
+  // Attach edit-pencil handlers
+  document.querySelectorAll('.edit-pencil').forEach(p => {
+    p.addEventListener('click', (ev) => {
+      ev.stopPropagation();
+      openFormForEdit(parseInt(p.dataset.edit, 10));
+    });
+  });
+  // Inject "+ הוסיפי מתכון" buttons into each section title
+  document.querySelectorAll('.section-title').forEach((st, idx) => {
+    if (st.querySelector('.add-recipe-btn')) return;
+    const h2 = st.querySelector('h2');
+    if (!h2) return;
+    // Map header text back to category key
+    const label = h2.textContent.trim();
+    const found = CATEGORIES.find(c => c[1] === label);
+    if (!found || found[0] === 'all') return;
+    const btn = document.createElement('button');
+    btn.className = 'add-recipe-btn';
+    btn.textContent = '+ הוסיפי מתכון';
+    btn.addEventListener('click', () => openFormForAdd(found[0]));
+    st.appendChild(btn);
+  });
+  // If we're in a filtered/category view (not the grouped "all" view), add a single button at the top
+  if (activeCat !== 'all' || query) {
+    const content = document.getElementById('content');
+    if (!content.querySelector('.add-recipe-btn-flat')) {
+      const cat = (activeCat !== 'all') ? activeCat : null;
+      const btn = document.createElement('button');
+      btn.className = 'add-recipe-btn add-recipe-btn-flat';
+      btn.textContent = '+ הוסיפי מתכון';
+      btn.addEventListener('click', () => openFormForAdd(cat || 'other'));
+      btn.style.marginBottom = '14px';
+      content.insertBefore(btn, content.firstChild);
+    }
+  }
+};
+
+// Init
+populateCategoryDropdown();
+applyAuthState();
 loadRecipes();
 </script>
 </body>
