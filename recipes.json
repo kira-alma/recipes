@@ -1,0 +1,1592 @@
+[
+  {
+    "id": 0,
+    "title": "עוגת שמרים שוקולד",
+    "date": "3/23/25",
+    "cat": "desserts",
+    "cats": [
+      "desserts"
+    ],
+    "src": {
+      "type": "site",
+      "label": "10 דקות",
+      "icon": "🍳"
+    },
+    "urls": [
+      "https://www.10dakot.co.il/recipe/%D7%A2%D7%95%D7%92%D7%AA-%D7%A9%D7%9E%D7%A8%D7%99%D7%9D-%D7%A9%D7%95%D7%A7%D7%95%D7%9C%D7%93/"
+    ],
+    "imgs": [],
+    "html": "<p>עוגת שמרים שוקולד</p>",
+    "s": "עוגת שמרים שוקולד עוגת שמרים שוקולד"
+  },
+  {
+    "id": 1,
+    "title": "זפיקנקה",
+    "date": "3/23/25",
+    "cat": "eggs_dairy",
+    "cats": [
+      "eggs_dairy"
+    ],
+    "src": {
+      "type": "typed",
+      "label": "מתכון מודפס",
+      "icon": "✍️"
+    },
+    "urls": [],
+    "imgs": [],
+    "html": "<p>זפיקנקה</p>\n<p>500 ג  גבינה לבנה 5%<br>2 ביצים<br>4-6 כפות סולת<br>סוכר וניל 2 גר( כאן בשקיות נייר כזה קטנות)<br>אבקת אופיה טיפונת<br>צימוקים, כל מיני פירות חתוכות קטן קטן😁<br>כף חלב</p>",
+    "s": "זפיקנקה זפיקנקה\n\n500 ג  גבינה לבנה 5%\n2 ביצים\n4-6 כפות סולת\nסוכר וניל 2 גר( כאן בשקיות נייר כזה קטנות)\nאבקת אופיה טיפונת\nצימוקים, כל מיני פירות חתוכות קטן קטן😁\nכף חלב"
+  },
+  {
+    "id": 2,
+    "title": "סלמון ברוטב לימון",
+    "date": "3/23/25",
+    "cat": "fish",
+    "cats": [
+      "fish",
+      "sauces"
+    ],
+    "src": {
+      "type": "site",
+      "label": "Foody",
+      "icon": "🍳"
+    },
+    "urls": [
+      "https://foody.co.il/foody_recipe/%D7%A1%D7%9C%D7%9E%D7%95%D7%9F-%D7%90%D7%A4%D7%95%D7%99-%D7%91%D7%9C%D7%99%D7%9E%D7%95%D7%9F-%D7%A9%D7%95%D7%9D-%D7%95%D7%93%D7%91%D7%A9-%D7%9E%D7%AA%D7%9B%D7%95%D7%9F-%D7%91-10-%D7%93%D7%A7%D7%95/"
+    ],
+    "imgs": [],
+    "html": "<p>סלמון ברוטב לימון</p>",
+    "s": "סלמון ברוטב לימון סלמון ברוטב לימון"
+  },
+  {
+    "id": 3,
+    "title": "פאד תאי",
+    "date": "3/23/25",
+    "cat": "pasta",
+    "cats": [
+      "pasta"
+    ],
+    "src": {
+      "type": "typed_img",
+      "label": "מתכון מודפס",
+      "icon": "✍️"
+    },
+    "urls": [],
+    "imgs": [
+      "images/IMG-20250311-WA0014.jpg"
+    ],
+    "html": "<p>פאד תאי</p>\n<p><strong>רוטב פאד תאי ביתי</strong> (לערבב בקערית):<br>3 כפות רוטב סויה<br>כף סילאן<br>כפית חמאת בוטנים<br>כף חומץ<br>כף צ’ילי מתוק<br>5 כפות מים<br>שן שום כתושה</p>",
+    "s": "פאד תאי פאד תאי\n\n**רוטב פאד תאי ביתי** (לערבב בקערית):\n3 כפות רוטב סויה\nכף סילאן\nכפית חמאת בוטנים\nכף חומץ\nכף צ’ילי מתוק\n5 כפות מים\nשן שום כתושה"
+  },
+  {
+    "id": 4,
+    "title": "חלה",
+    "date": "3/28/25",
+    "cat": "breads",
+    "cats": [
+      "breads"
+    ],
+    "src": {
+      "type": "site",
+      "label": "10 דקות",
+      "icon": "🍳"
+    },
+    "urls": [
+      "https://www.10dakot.co.il/recipe/%d7%9e%d7%aa%d7%9b%d7%95%d7%9f-%d7%9c%d7%97%d7%9c%d7%94/"
+    ],
+    "imgs": [],
+    "html": "<p>חלה</p>",
+    "s": "חלה חלה"
+  },
+  {
+    "id": 5,
+    "title": "רול ויאטנמי עם חמאת בוטנים",
+    "date": "3/28/25",
+    "cat": "pasta",
+    "cats": [
+      "pasta"
+    ],
+    "src": {
+      "type": "site",
+      "label": "הארץ",
+      "icon": "🍳"
+    },
+    "urls": [
+      "https://www.haaretz.co.il/food/touchfood/2022-06-14/ty-article/00000181-5c10-d3e6-a3c1-ff9ffde20000"
+    ],
+    "imgs": [],
+    "html": "<p>רול ויאטנמי עם חמאת בוטנים</p>",
+    "s": "רול ויאטנמי עם חמאת בוטנים רול ויאטנמי עם חמאת בוטנים"
+  },
+  {
+    "id": 6,
+    "title": "קציצות טריאקי",
+    "date": "3/31/25",
+    "cat": "meatballs",
+    "cats": [
+      "meatballs",
+      "meat"
+    ],
+    "src": {
+      "type": "site",
+      "label": "Aidells",
+      "icon": "🍳"
+    },
+    "urls": [
+      "https://www.aidells.com/recipes/dinner/teriyaki-meatball-stir-fry/"
+    ],
+    "imgs": [],
+    "html": "<p>קציצות טריאקי</p>",
+    "s": "קציצות טריאקי קציצות טריאקי"
+  },
+  {
+    "id": 7,
+    "title": "עוף בסויה עם פטריות",
+    "date": "3/31/25",
+    "cat": "chicken",
+    "cats": [
+      "chicken",
+      "veggies"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/830287275975119?mibextid=9drbnH&s=yWDuG2&fs=e"
+    ],
+    "imgs": [],
+    "html": "<p>עוף בסויה עם פטריות</p>",
+    "s": "עוף בסויה עם פטריות עוף בסויה עם פטריות <this message was edited>"
+  },
+  {
+    "id": 8,
+    "title": "עוף בסיידר תפוחים ודבש",
+    "date": "3/31/25",
+    "cat": "chicken",
+    "cats": [
+      "chicken",
+      "other"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/386275150375365?mibextid=6AJuK9"
+    ],
+    "imgs": [],
+    "html": "",
+    "s": "עוף בסיידר תפוחים ודבש "
+  },
+  {
+    "id": 9,
+    "title": "פרגיות כרוב אורז",
+    "date": "4/7/25",
+    "cat": "chicken",
+    "cats": [
+      "chicken"
+    ],
+    "src": {
+      "type": "site",
+      "label": "רוני יוחננוב",
+      "icon": "🍳"
+    },
+    "urls": [
+      "https://www.ronyohananov.com/post/%D7%A4%D7%A8%D7%92%D7%99%D7%95%D7%AA-%D7%9B%D7%A8%D7%95%D7%91-%D7%95%D7%90%D7%95%D7%A8%D7%96-%D7%91%D7%AA%D7%A0%D7%95%D7%A8-%D7%90%D7%A8%D7%95%D7%97%D7%94-%D7%A9%D7%94%D7%99%D7%90-%D7%97%D7%9C%D7%95%D7%9D"
+    ],
+    "imgs": [],
+    "html": "<p>פרגיות כרוב אורז</p>",
+    "s": "פרגיות כרוב אורז פרגיות כרוב אורז"
+  },
+  {
+    "id": 10,
+    "title": "בחש ועוף בתבנית אחת בתנור",
+    "date": "4/7/25",
+    "cat": "chicken",
+    "cats": [
+      "chicken"
+    ],
+    "src": {
+      "type": "site",
+      "label": "רוני יוחננוב",
+      "icon": "🍳"
+    },
+    "urls": [
+      "https://www.ronyohananov.com/post/%D7%91%D7%97%D7%A9-%D7%95%D7%A2%D7%95%D7%A3-%D7%91%D7%AA%D7%91%D7%A0%D7%99%D7%AA-%D7%90%D7%97%D7%AA-%D7%91%D7%AA%D7%A0%D7%95%D7%A8"
+    ],
+    "imgs": [],
+    "html": "",
+    "s": "בחש ועוף בתבנית אחת בתנור "
+  },
+  {
+    "id": 11,
+    "title": "לחמניות גבינה ברזילאיות",
+    "date": "4/13/25",
+    "cat": "breads",
+    "cats": [
+      "breads",
+      "other"
+    ],
+    "src": {
+      "type": "instagram",
+      "label": "סרטון אינסטגרם",
+      "icon": "🎥"
+    },
+    "urls": [
+      "https://www.instagram.com/reel/DFE4VBUSuYv/?igsh=M2k3NXNmM2h3emg3"
+    ],
+    "imgs": [],
+    "html": "",
+    "s": "לחמניות גבינה ברזילאיות "
+  },
+  {
+    "id": 12,
+    "title": "פשטידת תרד ובצל",
+    "date": "4/13/25",
+    "cat": "eggs_dairy",
+    "cats": [
+      "eggs_dairy",
+      "veggies"
+    ],
+    "src": {
+      "type": "site",
+      "label": "קרן אגם",
+      "icon": "🍳"
+    },
+    "urls": [
+      "https://kerenagam.co.il/%d7%9e%d7%90%d7%a4%d7%94-%d7%99%d7%95%d7%92%d7%95%d7%a8%d7%98-%d7%99%d7%95%d7%95%d7%a0%d7%99-%d7%95%d7%95%d7%90%d7%95/?fbclid=IwY2xjawJpTTFleHRuA2FlbQIxMQABHm6xpsRU8nQ6FrCXYCkLl2Oj1hcdfof5rjdQ9rfawkGnYWmadMaDtaugsUUE_aem_mfS7GCf9AkzNMJsfKLaAQA"
+    ],
+    "imgs": [],
+    "html": "<p>פשטידת תרד ובצל</p>",
+    "s": "פשטידת תרד ובצל פשטידת תרד ובצל"
+  },
+  {
+    "id": 13,
+    "title": "פונדנט שוקולד",
+    "date": "4/17/25",
+    "cat": "desserts",
+    "cats": [
+      "desserts"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/1213817403419680/?sfnsn=wa&mibextid=6AJuK9"
+    ],
+    "imgs": [],
+    "html": "<p>פונדנט שוקולד</p>",
+    "s": "פונדנט שוקולד פונדנט שוקולד"
+  },
+  {
+    "id": 14,
+    "title": "אורז ירוק",
+    "date": "4/25/25",
+    "cat": "rice",
+    "cats": [
+      "rice"
+    ],
+    "src": {
+      "type": "site",
+      "label": "10 דקות",
+      "icon": "🍳"
+    },
+    "urls": [
+      "https://www.10dakot.co.il/recipe/%D7%90%D7%95%D7%A8%D7%96-%D7%99%D7%A8%D7%95%D7%A7/"
+    ],
+    "imgs": [],
+    "html": "<p>אורז ירוק</p>",
+    "s": "אורז ירוק אורז ירוק"
+  },
+  {
+    "id": 15,
+    "title": "המנה המלזית של ג'ירף",
+    "date": "5/2/25",
+    "cat": "chicken",
+    "cats": [
+      "chicken",
+      "other"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/976847004471990?mibextid=6AJuK9"
+    ],
+    "imgs": [],
+    "html": "<p>המנה המלזית של ג'ירף</p>",
+    "s": "המנה המלזית של ג'ירף המנה המלזית של ג'ירף"
+  },
+  {
+    "id": 16,
+    "title": "חמין",
+    "date": "5/4/25",
+    "cat": "meat",
+    "cats": [
+      "meat",
+      "soups"
+    ],
+    "src": {
+      "type": "site",
+      "label": "10 דקות",
+      "icon": "🍳"
+    },
+    "urls": [
+      "https://www.10dakot.co.il/recipe/%d7%9e%d7%aa%d7%9b%d7%95%d7%9f-%d7%9c%d7%97%d7%9e%d7%99%d7%9f/"
+    ],
+    "imgs": [],
+    "html": "<p>חמין</p>",
+    "s": "חמין חמין"
+  },
+  {
+    "id": 17,
+    "title": "מג'דרה",
+    "date": "5/7/25",
+    "cat": "rice",
+    "cats": [
+      "rice"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/1638551463466805/?sfnsn=wa&mibextid=6AJuK9"
+    ],
+    "imgs": [],
+    "html": "<p>מג'דרה</p>",
+    "s": "מג'דרה מג'דרה"
+  },
+  {
+    "id": 18,
+    "title": "אורז עם צימוקים",
+    "date": "5/9/25",
+    "cat": "rice",
+    "cats": [
+      "rice"
+    ],
+    "src": {
+      "type": "site",
+      "label": "10 דקות",
+      "icon": "🍳"
+    },
+    "urls": [
+      "https://www.10dakot.co.il/recipe/%D7%90%D7%95%D7%A8%D7%96-%D7%A2%D7%9D-%D7%A6%D7%99%D7%9E%D7%95%D7%A7%D7%99%D7%9D-%D7%95%D7%A9%D7%A7%D7%93%D7%99%D7%9D/"
+    ],
+    "imgs": [],
+    "html": "<p>אורז עם צימוקים</p>",
+    "s": "אורז עם צימוקים אורז עם צימוקים"
+  },
+  {
+    "id": 19,
+    "title": "קבב עוף",
+    "date": "5/10/25",
+    "cat": "chicken",
+    "cats": [
+      "chicken"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/663044256705050?mibextid=6AJuK9"
+    ],
+    "imgs": [],
+    "html": "<p>קבב עוף</p>",
+    "s": "קבב עוף קבב עוף"
+  },
+  {
+    "id": 20,
+    "title": "מאפין",
+    "date": "5/24/25",
+    "cat": "desserts",
+    "cats": [
+      "desserts",
+      "breads"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/share/r/1RhZg3LrFm/"
+    ],
+    "imgs": [],
+    "html": "<p>מאפין</p>",
+    "s": "מאפין מאפין"
+  },
+  {
+    "id": 21,
+    "title": "סהרונים עם דובדבנים",
+    "date": "6/3/25",
+    "cat": "desserts",
+    "cats": [
+      "desserts"
+    ],
+    "src": {
+      "type": "site",
+      "label": "10 דקות",
+      "icon": "🍳"
+    },
+    "urls": [
+      "https://www.10dakot.co.il/recipe/%D7%92%D7%91%D7%99%D7%A0%D7%99%D7%95%D7%AA-%D7%A9%D7%9E%D7%A8%D7%99%D7%9D/"
+    ],
+    "imgs": [],
+    "html": "<p>סהרונים עם דובדבנים:<br>לשים 2-3 דובדבנים במקום המילוי עם חצי כפית סוכר</p>",
+    "s": "סהרונים עם דובדבנים סהרונים עם דובדבנים:\nלשים 2-3 דובדבנים במקום המילוי עם חצי כפית סוכר"
+  },
+  {
+    "id": 22,
+    "title": "תמר עם פטה",
+    "date": "6/18/25",
+    "cat": "salads",
+    "cats": [
+      "salads"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/2419582758401303/?sfnsn=wa&mibextid=6AJuK9"
+    ],
+    "imgs": [],
+    "html": "<p>תמר עם פטה</p>",
+    "s": "תמר עם פטה תמר עם פטה"
+  },
+  {
+    "id": 23,
+    "title": "פנקייקים",
+    "date": "6/18/25",
+    "cat": "desserts",
+    "cats": [
+      "desserts"
+    ],
+    "src": {
+      "type": "typed",
+      "label": "מתכון מודפס",
+      "icon": "✍️"
+    },
+    "urls": [],
+    "imgs": [],
+    "html": "<p><strong>מתכון פנקייקים:</strong><br>1 כוס קמח לבן<br>1.5 כפיות אבקת אפייה<br>1/2 כוס סוכר (או 1/4 סוכר 1/4 רסק תפוחים)<br>1 כוס חלב (רגיל/סוייה)<br>2 ביצים<br>1 כפית תמצית וניל<br>2 כפות שמן רגיל</p>\n<p>לחמם על אש בינונית נמוכה</p>",
+    "s": "פנקייקים *מתכון פנקייקים:*\n1 כוס קמח לבן\n1.5 כפיות אבקת אפייה\n1/2 כוס סוכר (או 1/4 סוכר 1/4 רסק תפוחים)\n1 כוס חלב (רגיל/סוייה)\n2 ביצים\n1 כפית תמצית וניל\n2 כפות שמן רגיל\n\nלחמם על אש בינונית נמוכה"
+  },
+  {
+    "id": 24,
+    "title": "קציצות הודו ברוטב טריאקי – אפייה ואז צמצום במחבת",
+    "date": "6/23/25",
+    "cat": "meatballs",
+    "cats": [
+      "meatballs",
+      "meat",
+      "sauces"
+    ],
+    "src": {
+      "type": "typed",
+      "label": "מתכון מודפס",
+      "icon": "✍️"
+    },
+    "urls": [],
+    "imgs": [],
+    "html": "<p>בהחלט! הנה המתכון הסופי המסוכם, כולל כל ההתאמות שדיברנו עליהן:</p>\n<hr class=\"rcp-hr\"/>\n<h4 class=\"rcp-h4\">🍱 <strong>קציצות הודו ברוטב טריאקי – אפייה ואז צמצום במחבת</strong></h4>\n<h4 class=\"rcp-h4\">🧾 מרכיבים לקציצות (כ־15 קציצות בינוניות):</h4>\n<p>* 500 גרם הודו טחון טרי<br>* 1 בצל קטן קצוץ דק או מגורר<br>* 1/4 כוס פטרוזיליה קצוצה<br>* 1/2 כוס פירורי לחם<br>* 1 קישוא אפוי (מעוך וקצוץ)<br>* 1 ביצה<br>* 2 כפות רוטב סויה<br>* 1/4 כפית פלפל שחור<br>* 1 שן שום כתושה<br>* (לא חובה) 1 כפית שמן שומשום<br>* (לא חובה) 1/4 כפית ג’ינג’ר מגורר</p>\n<hr class=\"rcp-hr\"/>\n<h4 class=\"rcp-h4\">🍶 רוטב טריאקי (אם לא משתמשים בקנוי):</h4>\n<p>* 1/3 כוס רוטב סויה<br>* 2 כפות סוכר חום<br>* 1 כף חומץ אורז או מיץ לימון<br>* 1 כפית שמן שומשום<br>* 1 כפית ג’ינג’ר מגורר<br>* 1 כפית שום כתוש<br>* 1 כפית קורנפלור + 2 כפות מים (לערבוב בנפרד)</p>\n<p>בשלי הכול יחד בסיר קטן 5–7 דקות עד להסמכה קלה.</p>\n<hr class=\"rcp-hr\"/>\n<h4 class=\"rcp-h4\">🔥 שלב 1 – אפייה:</h4>\n<p>1. חממי תנור ל־200 מעלות בטורבו.<br>2. עצבי קציצות בגובה של כ־1.5 ס\"מ.<br>3. הניחי על תבנית עם נייר אפייה, רססי/משחי מעט שמן מעל ומתחת.<br>4. אפי <strong>20-25 דקות</strong>, ללא הפיכה.</p>\n<hr class=\"rcp-hr\"/>\n<h4 class=\"rcp-h4\">🍳 שלב 2 – צמצום ברוטב במחבת:</h4>\n<p>1. חממי מחבת רחבה עם מעט שמן.<br>2. הניחי את הקציצות האפויות.<br>3. שפכי מעל את רוטב הטריאקי.<br>4. בשלי על אש בינונית-נמוכה 5–7 דקות, עד שהרוטב מסמיך ומצפה אותן יפה.<br>5. אפשר להפוך פעם אחת בעדינות – לא חובה.</p>\n<hr class=\"rcp-hr\"/>\n<h4 class=\"rcp-h4\">🍚 הצעת הגשה:</h4>\n<p>מעל אורז לבן, עם שומשום קלוי, בצל ירוק, או לצד ירקות מאודים.</p>",
+    "s": "קציצות הודו ברוטב טריאקי – אפייה ואז צמצום במחבת בהחלט! הנה המתכון הסופי המסוכם, כולל כל ההתאמות שדיברנו עליהן:\n\n---\n\n## 🍱 **קציצות הודו ברוטב טריאקי – אפייה ואז צמצום במחבת**\n\n### 🧾 מרכיבים לקציצות (כ־15 קציצות בינוניות):\n\n* 500 גרם הודו טחון טרי\n* 1 בצל קטן קצוץ דק או מגורר\n* 1/4 כוס פטרוזיליה קצוצה\n* 1/2 כוס פירורי לחם\n* 1 קישוא אפוי (מעוך וקצוץ)\n* 1 ביצה\n* 2 כפות רוטב סויה\n* 1/4 כפית פלפל שחור\n* 1 שן שום כתושה\n* (לא חובה) 1 כפית שמן שומשום\n* (לא חובה) 1/4 כפית ג’ינג’ר מגורר\n\n---\n\n### 🍶 רוטב טריאקי (אם לא משתמשים בקנוי):\n\n* 1/3 כוס רוטב סויה\n* 2 כפות סוכר חום\n* 1 כף חומץ אורז או מיץ לימון\n* 1 כפית שמן שומשום\n* 1 כפית ג’ינג’ר מגורר\n* 1 כפית שום כתוש\n* 1 כפית קורנפלור + 2 כפות מים (לערבוב בנפרד)\n\nבשלי הכול יחד בסיר קטן 5–7 דקות עד להסמכה קלה.\n\n---\n\n### 🔥 שלב 1 – אפייה:\n\n1. חממי תנור ל־200 מעלות בטורבו.\n2. עצבי קציצות בגובה של כ־1.5 ס\"מ.\n3. הניחי על תבנית עם נייר אפייה, רססי/משחי מעט שמן מעל ומתחת.\n4. אפי **20-25 דקות**, ללא הפיכה.\n\n---\n\n### 🍳 שלב 2 – צמצום ברוטב במחבת:\n\n1. חממי מחבת רחבה עם מעט שמן.\n2. הניחי את הקציצות האפויות.\n3. שפכי מעל את רוטב הטריאקי.\n4. בשלי על אש בינונית-נמוכה 5–7 דקות, עד שהרוטב מסמיך ומצפה אותן יפה.\n5. אפשר להפוך פעם אחת בעדינות – לא חובה.\n\n---\n\n### 🍚 הצעת הגשה:\n\nמעל אורז לבן, עם שומשום קלוי, בצל ירוק, או לצד ירקות מאודים."
+  },
+  {
+    "id": 25,
+    "title": "קציצות זוקיני",
+    "date": "6/24/25",
+    "cat": "meatballs",
+    "cats": [
+      "meatballs",
+      "meat"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/700983215972994/?sfnsn=wa&mibextid=6AJuK9"
+    ],
+    "imgs": [],
+    "html": "<p>קציצות זוקיני</p>",
+    "s": "קציצות זוקיני קציצות זוקיני"
+  },
+  {
+    "id": 26,
+    "title": "רוטב מנגולד",
+    "date": "6/25/25",
+    "cat": "sauces",
+    "cats": [
+      "sauces"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/1389667122063115?mibextid=6AJuK9"
+    ],
+    "imgs": [],
+    "html": "<p>רוטב מנגולד</p>",
+    "s": "רוטב מנגולד רוטב מנגולד"
+  },
+  {
+    "id": 27,
+    "title": "פיצה",
+    "date": "6/27/25",
+    "cat": "breads",
+    "cats": [
+      "breads"
+    ],
+    "src": {
+      "type": "site",
+      "label": "מאקו",
+      "icon": "🍳"
+    },
+    "urls": [
+      "https://mobile.mako.co.il/food-recipes/recipes_column-bread/Recipe-df29cf2e4721731006.htm"
+    ],
+    "imgs": [],
+    "html": "<p>פיצה</p>",
+    "s": "פיצה פיצה"
+  },
+  {
+    "id": 28,
+    "title": "חזה עוף",
+    "date": "6/28/25",
+    "cat": "chicken",
+    "cats": [
+      "chicken"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/1649176279080955/?sfnsn=wa&mibextid=6AJuK9"
+    ],
+    "imgs": [],
+    "html": "<p>חזה עוף</p>",
+    "s": "חזה עוף חזה עוף"
+  },
+  {
+    "id": 29,
+    "title": "סברינה",
+    "date": "7/12/25",
+    "cat": "desserts",
+    "cats": [
+      "desserts",
+      "salads"
+    ],
+    "src": {
+      "type": "site",
+      "label": "Yummio",
+      "icon": "🍳"
+    },
+    "urls": [
+      "https://yummio.co.il/%d7%a1%d7%91%d7%a8%d7%99%d7%a0%d7%94-%d7%a2%d7%a1%d7%99%d7%a1%d7%99%d7%aa-%d7%95%d7%9e%d7%a4%d7%a0%d7%a7%d7%aa-%d7%9e%d7%aa%d7%9b%d7%95%d7%9f-%d7%9e%d7%a0%d7%a6%d7%97/?fbclid=IwQ0xDSwLf5D1leHRuA2FlbQIxMAABHqYSg3ymJ3o5SdzAODCQI3t-1E60cHv1UrMF7SD2sE9taZhRoT2CXL3E8jVH_aem_DtOE16hkZ6r3LUw7g6xfhw&sfnsn=wa"
+    ],
+    "imgs": [],
+    "html": "<p>סברינה</p>",
+    "s": "סברינה סברינה"
+  },
+  {
+    "id": 30,
+    "title": "פסטה עם בשר מפורק 🍝",
+    "date": "7/18/25",
+    "cat": "pasta",
+    "cats": [
+      "pasta",
+      "meat"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/2321930631512554?sfnsn=wa&mibextid=6AJuK9"
+    ],
+    "imgs": [],
+    "html": "<p>פסטה עם בשר מפורק 🍝<br>סיר קל להכנה שכל מה שצריך בשבילו זאת מעט סבלנות 🧘🏽‍♀️ מתקבלת מנה של פסטה עם בשר עסיסי עטופה ברוטב אדום ומלא טעמים עמוקים של בישול ארוך. מושלם לשבת אז תשמרו ותכינו! 🫶🏼</p>\n<p>מצרכים:<br>קילו צלי כתף / אסאדו / צוואר (אני השתמשתי בצלי כתף)<br>250-300 גרם עגבניות שרי<br>300 מ״ל עגבניות מרוסקות/ רוטב עגבניות חלק<br>1 בצל קצוץ<br>רסק קטן<br>3 שיני שום כתושות<br>כף סילאן<br>כפית מלח<br>חצי כפית פלפל שחור<br>3-4 עלי בזיליקום<br>2 כוסות מים</p>\n<p>1. בסיר רחב נחמם רבע כוס שמן ונוסיף את הבצל לטיגון. נוסיף את קוביות הבשר ונצרוב מכל הצדדים. נחתוך את עגבניות השרי ונוסיף גם את הרסק ורוטב העגבניות. נוסיף תבלינים, שום, בזיליקום ומים ונסגור במכסה. נביא לרתיחה, ננמיך את האש ונבשל על אש נמוכה למשך שעתיים וחצי - שלוש שעות. אפשר לבשל גם בתנור. נדאג כל הזמן שיש מספיק נוזלים בסיר ושהבשר לא נשרף.<br>2. ⁠כשהבשר רך מאוד נתחיל לפרק אותו לחוטים בעזרת מזלג. אפשר גם בידיים עם כפפות.<br>3. ⁠נבשל את הפסטה לפי הוראות היצרן. ניקח חצי כוס ממי הפסטה ונוסיף לבשר המפורק. נסנן את הפסטה ונוסיף לבשל. נערבב היטב ונגיש<br>*אם אתם לא אוכלים באותו רגע מומלץ לא לערבב את הבשר עם הפסטה ואם אתם מערבבים ניתן לחמם בגז ולהוסיף מעט מים כדי ״להחיות״ את המנה</p>",
+    "s": "פסטה עם בשר מפורק 🍝 פסטה עם בשר מפורק 🍝 \nסיר קל להכנה שכל מה שצריך בשבילו זאת מעט סבלנות 🧘🏽‍♀️ מתקבלת מנה של פסטה עם בשר עסיסי עטופה ברוטב אדום ומלא טעמים עמוקים של בישול ארוך. מושלם לשבת אז תשמרו ותכינו! 🫶🏼\n\nמצרכים:\nקילו צלי כתף / אסאדו / צוואר (אני השתמשתי בצלי כתף)\n250-300 גרם עגבניות שרי \n300 מ״ל עגבניות מרוסקות/ רוטב עגבניות חלק\n1 בצל קצוץ\nרסק קטן \n3 שיני שום כתושות \nכף סילאן\nכפית מלח\nחצי כפית פלפל שחור \n3-4 עלי בזיליקום\n2 כוסות מים\n\n1. בסיר רחב נחמם רבע כוס שמן ונוסיף את הבצל לטיגון. נוסיף את קוביות הבשר ונצרוב מכל הצדדים. נחתוך את עגבניות השרי ונוסיף גם את הרסק ורוטב העגבניות. נוסיף תבלינים, שום, בזיליקום ומים ונסגור במכסה. נביא לרתיחה, ננמיך את האש ונבשל על אש נמוכה למשך שעתיים וחצי - שלוש שעות. אפשר לבשל גם בתנור. נדאג כל הזמן שיש מספיק נוזלים בסיר ושהבשר לא נשרף. \n2. ⁠כשהבשר רך מאוד נתחיל לפרק אותו לחוטים בעזרת מזלג. אפשר גם בידיים עם כפפות. \n3. ⁠נבשל את הפסטה לפי הוראות היצרן. ניקח חצי כוס ממי הפסטה ונוסיף לבשר המפורק. נסנן את הפסטה ונוסיף לבשל. נערבב היטב ונגיש\n*אם אתם לא אוכלים באותו רגע מומלץ לא לערבב את הבשר עם הפסטה ואם אתם מערבבים ניתן לחמם בגז ולהוסיף מעט מים כדי ״להחיות״ את המנה"
+  },
+  {
+    "id": 31,
+    "title": "סלמון בטריאקי",
+    "date": "8/23/25",
+    "cat": "fish",
+    "cats": [
+      "fish",
+      "sauces"
+    ],
+    "src": {
+      "type": "share",
+      "label": "קישור משותף",
+      "icon": "🔗"
+    },
+    "urls": [
+      "https://share.google/7OqtudvPgxAfnrKGa"
+    ],
+    "imgs": [],
+    "html": "<p>סלמון בטריאקי</p>",
+    "s": "סלמון בטריאקי סלמון בטריאקי"
+  },
+  {
+    "id": 32,
+    "title": "סלט כרוב לבן קל להכנה וטעים במיוחד",
+    "date": "8/27/25",
+    "cat": "salads",
+    "cats": [
+      "salads"
+    ],
+    "src": {
+      "type": "share",
+      "label": "קישור משותף",
+      "icon": "🔗"
+    },
+    "urls": [
+      "https://share.google/ofPsTyhiG6btfgIFk"
+    ],
+    "imgs": [],
+    "html": "<p>סלט כרוב לבן קל להכנה וטעים במיוחד | מתכונים ב-10 דקות</p>",
+    "s": "סלט כרוב לבן קל להכנה וטעים במיוחד סלט כרוב לבן קל להכנה וטעים במיוחד | מתכונים ב-10 דקות"
+  },
+  {
+    "id": 33,
+    "title": "סלט קפרזה - סלט עגבניות ומוצרלה איטלקי",
+    "date": "8/27/25",
+    "cat": "salads",
+    "cats": [
+      "salads"
+    ],
+    "src": {
+      "type": "share",
+      "label": "קישור משותף",
+      "icon": "🔗"
+    },
+    "urls": [
+      "https://share.google/q63NrBaYUE3ECnN2b"
+    ],
+    "imgs": [],
+    "html": "<p>סלט קפרזה - סלט עגבניות ומוצרלה איטלקי | מתכונים ב-10 דקות</p>",
+    "s": "סלט קפרזה - סלט עגבניות ומוצרלה איטלקי סלט קפרזה - סלט עגבניות ומוצרלה איטלקי | מתכונים ב-10 דקות"
+  },
+  {
+    "id": 34,
+    "title": "סלט ביצים",
+    "date": "8/27/25",
+    "cat": "salads",
+    "cats": [
+      "salads"
+    ],
+    "src": {
+      "type": "share",
+      "label": "קישור משותף",
+      "icon": "🔗"
+    },
+    "urls": [
+      "https://share.google/c6WPtGLnAaOSzhq8P"
+    ],
+    "imgs": [],
+    "html": "<p>סלט ביצים - מתכון פשוט ומנצח</p>",
+    "s": "סלט ביצים סלט ביצים - מתכון פשוט ומנצח"
+  },
+  {
+    "id": 35,
+    "title": "סלט תרד תפוחים",
+    "date": "8/27/25",
+    "cat": "salads",
+    "cats": [
+      "salads",
+      "veggies"
+    ],
+    "src": {
+      "type": "site",
+      "label": "10 דקות",
+      "icon": "🍳"
+    },
+    "urls": [
+      "https://www.10dakot.co.il/recipe/%D7%A1%D7%9C%D7%98-%D7%AA%D7%A8%D7%93/"
+    ],
+    "imgs": [],
+    "html": "<p>סלט תרד תפוחים</p>",
+    "s": "סלט תרד תפוחים סלט תרד תפוחים"
+  },
+  {
+    "id": 36,
+    "title": "קציצות קיפודים 🦔",
+    "date": "8/30/25",
+    "cat": "meatballs",
+    "cats": [
+      "meatballs",
+      "meat"
+    ],
+    "src": {
+      "type": "typed",
+      "label": "מתכון מודפס",
+      "icon": "✍️"
+    },
+    "urls": [],
+    "imgs": [],
+    "html": "<p>קציצות קיפודים 🦔</p>\n<p>לקציצות:<br>500 גרם בשר טחון<br>בצל אחד קצוץ<br>צרור כוסברה<br>כוס אורז פרסי או בסמטי<br>כפית מלח<br>2 שיני שום כתושות<br>חצי כפית פלפל שחור<br>כפית פפריקה<br>כפית ראס אל חנות</p>\n<p>לרוטב:<br>בצל קצוץ<br>2 עגבניות גדולות מגורדות<br>2 שיני שום<br>כף גדושה רסק עגבניות<br>כף סילאן<br>כפית מלח<br>רבע כפית פלפל שחור<br>רבע כפית כורכום<br>כף פפריקה<br>כפית גדושה מרק עוף<br>2 כוסות מים רותחים</p>\n<p>מטגנים בצל במעט שמן. מערבבים אותו עם הבשר, האורז ושאר מרכיבי הקציצות. יוצרים כדורים.</p>\n<p>מכינים את הרוטב: בבלנדר שמים יחד רסק עגבניות, עגבניות ושום וטוחנים (אפשר גם לגרד את העגבניות ולכתוש את השום).<br>בסיר רחב מחממים מעט כרבע כוס שמן. מוסיפים את הבצל ומטגנים מספר דקות.<br>מוסיפים את העגבניות והשום ואת התבלינים.<br>מוסיפים 2 כוסות מים ומביאים לרתיחה.<br>כשהרוטב רותח מכניסים את הקציצות. הרוטב צריך להגיע לחצי גובה הקציצה.<br>מכסים ומבשלים על אש קטנה כ 40 דקות.⁩</p>",
+    "s": "קציצות קיפודים 🦔 קציצות קיפודים 🦔 \n\nלקציצות:\n500 גרם בשר טחון\nבצל אחד קצוץ\nצרור כוסברה\nכוס אורז פרסי או בסמטי\nכפית מלח\n2 שיני שום כתושות\nחצי כפית פלפל שחור\nכפית פפריקה\nכפית ראס אל חנות\n\nלרוטב:\nבצל קצוץ\n2 עגבניות גדולות מגורדות\n2 שיני שום\nכף גדושה רסק עגבניות\nכף סילאן\nכפית מלח\nרבע כפית פלפל שחור\nרבע כפית כורכום\nכף פפריקה\nכפית גדושה מרק עוף\n2 כוסות מים רותחים\n\nמטגנים בצל במעט שמן. מערבבים אותו עם הבשר, האורז ושאר מרכיבי הקציצות. יוצרים כדורים.\n\nמכינים את הרוטב: בבלנדר שמים יחד רסק עגבניות, עגבניות ושום וטוחנים (אפשר גם לגרד את העגבניות ולכתוש את השום).\nבסיר רחב מחממים מעט כרבע כוס שמן. מוסיפים את הבצל ומטגנים מספר דקות.\nמוסיפים את העגבניות והשום ואת התבלינים.\nמוסיפים 2 כוסות מים ומביאים לרתיחה.\nכשהרוטב רותח מכניסים את הקציצות. הרוטב צריך להגיע לחצי גובה הקציצה.\nמכסים ומבשלים על אש קטנה כ 40 דקות.⁩"
+  },
+  {
+    "id": 37,
+    "title": "רוטב לקציצות",
+    "date": "8/30/25",
+    "cat": "sauces",
+    "cats": [
+      "sauces",
+      "meatballs",
+      "meat"
+    ],
+    "src": {
+      "type": "share",
+      "label": "קישור משותף",
+      "icon": "🔗"
+    },
+    "urls": [
+      "https://share.google/pAkXeATyNjHZn9k3C"
+    ],
+    "imgs": [],
+    "html": "<p>רוטב לקציצות</p>",
+    "s": "רוטב לקציצות רוטב לקציצות"
+  },
+  {
+    "id": 38,
+    "title": "פלפל ממולא",
+    "date": "9/16/25",
+    "cat": "meat",
+    "cats": [
+      "meat"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/2379827569080469/?sfnsn=wa&mibextid=6AJuK9"
+    ],
+    "imgs": [],
+    "html": "<p>פלפל ממולא</p>",
+    "s": "פלפל ממולא פלפל ממולא <this message was edited>"
+  },
+  {
+    "id": 39,
+    "title": "אורז ואפונה (אפשר להוסיף עוף בסיר אחד)",
+    "date": "9/29/25",
+    "cat": "rice",
+    "cats": [
+      "rice",
+      "chicken"
+    ],
+    "src": {
+      "type": "share",
+      "label": "קישור משותף",
+      "icon": "🔗"
+    },
+    "urls": [
+      "https://share.google/YDH0eGihUFQA9uONp"
+    ],
+    "imgs": [],
+    "html": "<p>אורז ואפונה (אפשר להוסיף עוף בסיר אחד) | מתכונים ב-10 דקות</p>",
+    "s": "אורז ואפונה (אפשר להוסיף עוף בסיר אחד) אורז ואפונה (אפשר להוסיף עוף בסיר אחד) | מתכונים ב-10 דקות"
+  },
+  {
+    "id": 40,
+    "title": "עוגת תפוחים",
+    "date": "10/4/25",
+    "cat": "desserts",
+    "cats": [
+      "desserts"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/678589924670182/?sfnsn=wa&mibextid=6AJuK9"
+    ],
+    "imgs": [],
+    "html": "<p>עוגת תפוחים</p>",
+    "s": "עוגת תפוחים עוגת תפוחים"
+  },
+  {
+    "id": 41,
+    "title": "בייגל ירושלמי",
+    "date": "10/11/25",
+    "cat": "breads",
+    "cats": [
+      "breads"
+    ],
+    "src": {
+      "type": "share",
+      "label": "קישור משותף",
+      "icon": "🔗"
+    },
+    "urls": [
+      "https://share.google/PwGwPjfSAa0Sh7Sju"
+    ],
+    "imgs": [],
+    "html": "<p>בייגל ירושלמי</p>",
+    "s": "בייגל ירושלמי בייגל ירושלמי"
+  },
+  {
+    "id": 42,
+    "title": "מרק עגבניות ופלפלים",
+    "date": "10/13/25",
+    "cat": "soups",
+    "cats": [
+      "soups"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/1825688674973719/?sfnsn=wa&mibextid=6AJuK9"
+    ],
+    "imgs": [],
+    "html": "<p>מרק עגבניות ופלפלים</p>\n<p>Ingredients (makes ~4-6 servings)</p>\n<p>1 yellow onion, roughly chopped.</p>\n<p>2 carrots, roughly chopped.</p>\n<p>4 red bell peppers, roughly chopped.</p>\n<p>1 cup cherry tomatoes.</p>\n<p>1 head garlic, sliced in half crosswise.</p>\n<p>Salt &amp; pepper, to taste.</p>\n<p>1-2 sprigs fresh thyme.</p>\n<p>1-2 sprigs fresh rosemary.</p>\n<p>1 cup vegetable broth or 1 cup water with 0.5 tbsp of smoked paprika and 0.5 tbsp of salt.</p>\n<p>1 cup coconut milk (or soy milk).</p>\n<p>Optional: Extra virgin olive oil for roasting/drizzling.</p>\n<hr class=\"rcp-hr\"/>\n<p>Instructions</p>\n<p>1. Preheat oven to 400 °F (200 °C).</p>\n<p>2. Line a baking sheet with parchment paper.</p>\n<p>3. Roughly chop the onion, carrots, and red peppers; slice the garlic head in half cross-wise. Spread these veggies + the cherry tomatoes on the sheet.</p>\n<p>4. Drizzle (lightly) with olive oil, sprinkle salt and pepper, add the fresh thyme and rosemary. Roast for ~25-30 minutes, until the vegetables are tender and slightly caramelized.</p>\n<p>5. Once roasted: squeeze the softened garlic cloves from their skins into a blender together with the rest of the roasted vegetables. Add the coconut (or soy) milk + vegetable broth.</p>\n<p>6. Blend until completely smooth and creamy. Taste and adjust seasoning (salt &amp; pepper) as needed.</p>\n<p>7. Serve warm. Optionally accompany with crusty bread, fresh herbs, or a swirl of plant-based yogurt.</p>",
+    "s": "מרק עגבניות ופלפלים מרק עגבניות ופלפלים\n\ningredients (makes ~4-6 servings)\n\n1 yellow onion, roughly chopped. \n\n2 carrots, roughly chopped. \n\n4 red bell peppers, roughly chopped. \n\n1 cup cherry tomatoes. \n\n1 head garlic, sliced in half crosswise. \n\nsalt & pepper, to taste. \n\n1-2 sprigs fresh thyme. \n\n1-2 sprigs fresh rosemary. \n\n1 cup vegetable broth or 1 cup water with 0.5 tbsp of smoked paprika and 0.5 tbsp of salt. \n\n1 cup coconut milk (or soy milk).\n\noptional: extra virgin olive oil for roasting/drizzling. \n\n\n\n---\n\ninstructions\n\n1. preheat oven to 400 °f (200 °c). \n\n\n2. line a baking sheet with parchment paper. \n\n\n3. roughly chop the onion, carrots, and red peppers; slice the garlic head in half cross-wise. spread these veggies + the cherry tomatoes on the sheet. \n\n\n4. drizzle (lightly) with olive oil, sprinkle salt and pepper, add the fresh thyme and rosemary. roast for ~25-30 minutes, until the vegetables are tender and slightly caramelized. \n\n\n5. once roasted: squeeze the softened garlic cloves from their skins into a blender together with the rest of the roasted vegetables. add the coconut (or soy) milk + vegetable broth. \n\n\n6. blend until completely smooth and creamy. taste and adjust seasoning (salt & pepper) as needed. \n\n\n7. serve warm. optionally accompany with crusty bread, fresh herbs, or a swirl of plant-based yogurt. <this message was edited>"
+  },
+  {
+    "id": 43,
+    "title": "מתכונים ללחם עם אופה לחם",
+    "date": "10/17/25",
+    "cat": "breads",
+    "cats": [
+      "breads"
+    ],
+    "src": {
+      "type": "share",
+      "label": "קישור משותף",
+      "icon": "🔗"
+    },
+    "urls": [
+      "https://share.google/1uI0XwQidyOsmZ8iZ"
+    ],
+    "imgs": [],
+    "html": "<p>שמרית מציגה: מתכונים ללחם להכנה עם אופה לחם. מתכון ללחם</p>\n<p>1. Basic / בסיסי<br> 2. French / צרפתי<br> 3. Wholewheat / חיטה מלאה<br> 4. Quick / מהיר<br> 5. Sweet / מתוק<br> 6. FastBake I / מהיר I<br> 7. FastBake II / מהיר II<br> 8. Dough / בצק<br> 9. Jam / ריבה<br> 10. Cake / עוגה<br> 11. Sandwich / סנדוויץ’<br> 12. Extra – תוכנית “תוספת אפייה” (Extra Bake)</p>",
+    "s": "מתכונים ללחם עם אופה לחם שמרית מציגה: מתכונים ללחם להכנה עם אופה לחם. מתכון ללחם\n\n 1. basic / בסיסי\n 2. french / צרפתי\n 3. wholewheat / חיטה מלאה\n 4. quick / מהיר\n 5. sweet / מתוק\n 6. fastbake i / מהיר i\n 7. fastbake ii / מהיר ii\n 8. dough / בצק\n 9. jam / ריבה\n 10. cake / עוגה\n 11. sandwich / סנדוויץ’\n 12. extra – תוכנית “תוספת אפייה” (extra bake)"
+  },
+  {
+    "id": 44,
+    "title": "מרק פטריות",
+    "date": "10/20/25",
+    "cat": "soups",
+    "cats": [
+      "soups",
+      "veggies"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/1358904565798967/?sfnsn=wa&mibextid=6AJuK9"
+    ],
+    "imgs": [],
+    "html": "<p>מרק פטריות. להחליף את הקוטב בכוס של קוקוס</p>",
+    "s": "מרק פטריות מרק פטריות. להחליף את הקוטב בכוס של קוקוס"
+  },
+  {
+    "id": 45,
+    "title": "באן בשר מפורק",
+    "date": "10/22/25",
+    "cat": "meat",
+    "cats": [
+      "meat",
+      "breads"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/1522760248752740/?sfnsn=wa&mibextid=6AJuK9",
+      "https://share.google/sEMROyQKWAnxfGcz5"
+    ],
+    "imgs": [],
+    "html": "<p>באן בשר מפורק</p>",
+    "s": "באן בשר מפורק באן בשר מפורק\n  <this message was edited>"
+  },
+  {
+    "id": 46,
+    "title": "קבבים עם פיסטוק על מקל קינמון",
+    "date": "11/22/25",
+    "cat": "meat",
+    "cats": [
+      "meat"
+    ],
+    "src": {
+      "type": "share",
+      "label": "קישור משותף",
+      "icon": "🔗"
+    },
+    "urls": [
+      "https://share.google/0a9iE9RxoLckH2Shv"
+    ],
+    "imgs": [],
+    "html": "<p>קבבים עם פיסטוק על מקל קינמון - מתכון - FoodsDictionary</p>",
+    "s": "קבבים עם פיסטוק על מקל קינמון קבבים עם פיסטוק על מקל קינמון - מתכון - foodsdictionary"
+  },
+  {
+    "id": 47,
+    "title": "פאד תאי | מתכון לפאד תאי כמו במסעדות",
+    "date": "12/9/25",
+    "cat": "pasta",
+    "cats": [
+      "pasta"
+    ],
+    "src": {
+      "type": "share",
+      "label": "קישור משותף",
+      "icon": "🔗"
+    },
+    "urls": [
+      "https://share.google/Z2myFoWYzSYekeZdg"
+    ],
+    "imgs": [],
+    "html": "<p>פאד תאי | מתכון לפאד תאי כמו במסעדות | מתכונים ב-10 דקות</p>",
+    "s": "פאד תאי | מתכון לפאד תאי כמו במסעדות פאד תאי | מתכון לפאד תאי כמו במסעדות | מתכונים ב-10 דקות"
+  },
+  {
+    "id": 48,
+    "title": "פאדג שוקולד ואגוזים",
+    "date": "2/4/26",
+    "cat": "desserts",
+    "cats": [
+      "desserts",
+      "fish"
+    ],
+    "src": {
+      "type": "share",
+      "label": "קישור משותף",
+      "icon": "🔗"
+    },
+    "urls": [
+      "https://share.google/BqsgZBtRkVxnMBKni"
+    ],
+    "imgs": [],
+    "html": "<p>פאדג שוקולד ואגוזים - 4 מצרכים בלבד! טעים ומומלץ</p>",
+    "s": "פאדג שוקולד ואגוזים פאדג שוקולד ואגוזים - 4 מצרכים בלבד! טעים ומומלץ"
+  },
+  {
+    "id": 49,
+    "title": "אורז נחשים",
+    "date": "2/19/26",
+    "cat": "rice",
+    "cats": [
+      "rice"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/1235027651840288?sfnsn=wa&mibextid=6AJuK9"
+    ],
+    "imgs": [],
+    "html": "<p>אורז נחשים</p>",
+    "s": "אורז נחשים אורז נחשים"
+  },
+  {
+    "id": 50,
+    "title": "מוסקה אפויה",
+    "date": "2/27/26",
+    "cat": "meat",
+    "cats": [
+      "meat"
+    ],
+    "src": {
+      "type": "tiktok",
+      "label": "סרטון טיקטוק",
+      "icon": "🎵"
+    },
+    "urls": [
+      "https://www.tiktok.com/@ido.pilpel/video/7340962719777983745"
+    ],
+    "imgs": [
+      "images/IMG-20260227-WA0013.jpg",
+      "images/IMG-20260227-WA0014.jpg"
+    ],
+    "html": "<p>מוסקה אפויה</p>",
+    "s": "מוסקה אפויה מוסקה אפויה"
+  },
+  {
+    "id": 51,
+    "title": "עוף בטריאקי",
+    "date": "3/2/26",
+    "cat": "chicken",
+    "cats": [
+      "chicken",
+      "sauces"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/1600188917657107?sfnsn=wa&mibextid=6AJuK9"
+    ],
+    "imgs": [],
+    "html": "<p>עוף בטריאקי</p>",
+    "s": "עוף בטריאקי עוף בטריאקי"
+  },
+  {
+    "id": 52,
+    "title": "פודינג צ'יה קוקוס",
+    "date": "3/4/26",
+    "cat": "desserts",
+    "cats": [
+      "desserts"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/1790690464947923?sfnsn=wa&mibextid=6AJuK9"
+    ],
+    "imgs": [],
+    "html": "<p>פודינג צ'יה קוקוס</p>",
+    "s": "פודינג צ'יה קוקוס פודינג צ'יה קוקוס <this message was edited>"
+  },
+  {
+    "id": 53,
+    "title": "אורז פרסי",
+    "date": "3/8/26",
+    "cat": "rice",
+    "cats": [
+      "rice"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/777779878458348?sfnsn=wa&mibextid=6AJuK9"
+    ],
+    "imgs": [],
+    "html": "<p>אורז פרסי</p>",
+    "s": "אורז פרסי אורז פרסי"
+  },
+  {
+    "id": 54,
+    "title": "בצק פיצה נפוליטנית",
+    "date": "3/11/26",
+    "cat": "breads",
+    "cats": [
+      "breads"
+    ],
+    "src": {
+      "type": "site",
+      "label": "מאקו",
+      "icon": "🍳"
+    },
+    "urls": [
+      "https://www.mako.co.il/food-recipes/recipes_column-bread/Recipe-65df2c9dd239c71027.htm"
+    ],
+    "imgs": [],
+    "html": "",
+    "s": "בצק פיצה נפוליטנית "
+  },
+  {
+    "id": 55,
+    "title": "בצק איטלקי",
+    "date": "3/12/26",
+    "cat": "breads",
+    "cats": [
+      "breads"
+    ],
+    "src": {
+      "type": "youtube",
+      "label": "סרטון יוטיוב",
+      "icon": "▶️"
+    },
+    "urls": [
+      "https://youtu.be/G-jPoROGHGE?si=oReXcPCh-ipj0lEx"
+    ],
+    "imgs": [],
+    "html": "<p>אגב- אם את רוצה מתכון טוב לבצק, ולקבל קצת וייבים איטלקיים-<br>יש הרבה סוגים. זה הבצק שהוא הכי Cost-effective שאני מצאתי.</p>",
+    "s": "בצק איטלקי אגב- אם את רוצה מתכון טוב לבצק, ולקבל קצת וייבים איטלקיים-\nיש הרבה סוגים. זה הבצק שהוא הכי cost-effective שאני מצאתי."
+  },
+  {
+    "id": 56,
+    "title": "צזיקי",
+    "date": "3/21/26",
+    "cat": "salads",
+    "cats": [
+      "salads",
+      "sauces"
+    ],
+    "src": {
+      "type": "typed",
+      "label": "מתכון מודפס",
+      "icon": "✍️"
+    },
+    "urls": [],
+    "imgs": [],
+    "html": "<p><strong>צזיקי</strong></p>\n<p>500 גרם יוגורט יווני 10%</p>\n<p>2 כפות לאבנה או שמנת חמוצה</p>\n<p>1 מלפפון גדול, מגורר וסחוט היטב</p>\n<p>1 שן שום כתושה</p>\n<p>1 כף לימון</p>\n<p>1.5 כפות שמן זית</p>\n<p>1 כף שמיר קצוץ</p>\n<p>מלח, מעט פלפל</p>\n<p>מערבבים הכול ומקררים חצי שעה.<br>להגשה: עוד קצת שמן זית מעל.</p>\n<p>הסוד: מלפפון סחוט טוב ויוגורט שמן.</p>",
+    "s": "צזיקי *צזיקי*\n\n500 גרם יוגורט יווני 10%\n\n2 כפות לאבנה או שמנת חמוצה\n\n1 מלפפון גדול, מגורר וסחוט היטב\n\n1 שן שום כתושה\n\n1 כף לימון\n\n1.5 כפות שמן זית\n\n1 כף שמיר קצוץ\n\nמלח, מעט פלפל\n\n\nמערבבים הכול ומקררים חצי שעה.\nלהגשה: עוד קצת שמן זית מעל.\n\nהסוד: מלפפון סחוט טוב ויוגורט שמן."
+  },
+  {
+    "id": 57,
+    "title": "לאבנה",
+    "date": "3/21/26",
+    "cat": "salads",
+    "cats": [
+      "salads",
+      "sauces"
+    ],
+    "src": {
+      "type": "typed",
+      "label": "מתכון מודפס",
+      "icon": "✍️"
+    },
+    "urls": [],
+    "imgs": [],
+    "html": "<p><strong>לאבנה</strong><br>500 גרם יוגורט יווני או יוגורט לבן<br>1/4–1/2 כפית מלח<br>איך:<br>מערבבים יוגורט עם מלח.<br>שמים במסננת מרופדת בבד חיתול/חיתול טטרה/מגבת דקה או נייר סופג איכותי.<br>מניחים את המסננת מעל קערה.<br>מכסים ומכניסים למקרר ל־8–24 שעות.</p>",
+    "s": "לאבנה *לאבנה*\n500 גרם יוגורט יווני או יוגורט לבן\n1/4–1/2 כפית מלח\nאיך:\nמערבבים יוגורט עם מלח.\nשמים במסננת מרופדת בבד חיתול/חיתול טטרה/מגבת דקה או נייר סופג איכותי.\nמניחים את המסננת מעל קערה.\nמכסים ומכניסים למקרר ל־8–24 שעות."
+  },
+  {
+    "id": 58,
+    "title": "פיתה זעתר",
+    "date": "3/21/26",
+    "cat": "breads",
+    "cats": [
+      "breads",
+      "drinks"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/2168219700363558?mibextid=6AJuK9"
+    ],
+    "imgs": [],
+    "html": "<p>פיתה זעתר</p>",
+    "s": "פיתה זעתר פיתה זעתר"
+  },
+  {
+    "id": 59,
+    "title": "קציצות עם כרובית בפנים ברוטב לימון",
+    "date": "3/22/26",
+    "cat": "meatballs",
+    "cats": [
+      "meatballs",
+      "meat",
+      "sauces",
+      "veggies"
+    ],
+    "src": {
+      "type": "typed",
+      "label": "מתכון מודפס",
+      "icon": "✍️"
+    },
+    "urls": [],
+    "imgs": [],
+    "html": "<p><strong>קציצות עם כרובית בפנים ברוטב לימון</strong></p>\n<p>לקציצות</p>\n<p>500 גרם בשר טחון</p>\n<p>1 בצל קטן מגורר וסחוט היטב</p>\n<p>רבע צרור פטרוזיליה קצוצה</p>\n<p>6 כפות פירורי לחם</p>\n<p>2 כפות מים קרים</p>\n<p>1 כף שמן זית</p>\n<p>3/4 כפית ראס אל חנות</p>\n<p>1 כפית מחוקה פלפל</p>\n<p>1 כפית שטוחה מלח</p>\n<p>קמצוץ קינמון, לא חובה</p>\n<p>כרובית מפורקת לפרחים קטנים-בינוניים</p>\n<p>לרוטב</p>\n<p>2 כפות שמן זית</p>\n<p>3 שיני שום פרוסות או כתושות</p>\n<p>1 ורבע כוסות מים</p>\n<p>מיץ מחצי לימון</p>\n<p>1/2 כפית כורכום</p>\n<p>1/2 כפית מלח</p>\n<p>מעט פלפל שחור</p>\n<p>1/2 כפית דבש או סוכר, לא חובה</p>\n<p>הכנה</p>\n<p>1. חולטים את פרחי הכרובית 3 דקות במים רותחים, מסננים ומייבשים.</p>\n<p>2. מערבבים את כל חומרי הקציצות.</p>\n<p>3. נותנים לתערובת לנוח 15–20 דקות.</p>\n<p>4. לוקחים מעט תערובת, שמים בפנים פרח כרובית, וסוגרים לקציצה.</p>\n<p>מכינים את הרוטב</p>\n<p>1. מחממים בסיר רחב 2 כפות שמן זית.</p>\n<p>2. מוסיפים שום ל־20–30 שניות.</p>\n<p>3. מוסיפים כורכום.</p>\n<p>4. מוסיפים מים, לימון, מלח, פלפל, ודבש אם רוצים.</p>\n<p>5. מביאים לבעבוע עדין.</p>\n<p>מבשלים</p>\n<p>1. מניחים את הקציצות בעדינות בתוך הרוטב.</p>\n<p>2. אם צריך, מוסיפים קצת מים כדי שהרוטב יגיע עד חצי–שני שליש מהגובה שלהן.</p>\n<p>3. מכסים.</p>\n<p>4. מבשלים על אש נמוכה 35–40 דקות.</p>\n<p>5. לא לערבב בכף, רק לנענע קצת את הסיר.</p>",
+    "s": "קציצות עם כרובית בפנים ברוטב לימון *קציצות עם כרובית בפנים ברוטב לימון*\n\nלקציצות\n\n500 גרם בשר טחון\n\n1 בצל קטן מגורר וסחוט היטב\n\nרבע צרור פטרוזיליה קצוצה\n\n6 כפות פירורי לחם\n\n2 כפות מים קרים\n\n1 כף שמן זית\n\n3/4 כפית ראס אל חנות\n\n1 כפית מחוקה פלפל\n\n1 כפית שטוחה מלח\n\nקמצוץ קינמון, לא חובה\n\nכרובית מפורקת לפרחים קטנים-בינוניים\n\n\nלרוטב\n\n2 כפות שמן זית\n\n3 שיני שום פרוסות או כתושות\n\n1 ורבע כוסות מים\n\nמיץ מחצי לימון\n\n1/2 כפית כורכום\n\n1/2 כפית מלח\n\nמעט פלפל שחור\n\n1/2 כפית דבש או סוכר, לא חובה\n\n\nהכנה\n\n1. חולטים את פרחי הכרובית 3 דקות במים רותחים, מסננים ומייבשים.\n\n\n2. מערבבים את כל חומרי הקציצות.\n\n\n3. נותנים לתערובת לנוח 15–20 דקות.\n\n\n4. לוקחים מעט תערובת, שמים בפנים פרח כרובית, וסוגרים לקציצה.\n\n\n\nמכינים את הרוטב\n\n1. מחממים בסיר רחב 2 כפות שמן זית.\n\n\n2. מוסיפים שום ל־20–30 שניות.\n\n\n3. מוסיפים כורכום.\n\n\n4. מוסיפים מים, לימון, מלח, פלפל, ודבש אם רוצים.\n\n\n5. מביאים לבעבוע עדין.\n\n\n\nמבשלים\n\n1. מניחים את הקציצות בעדינות בתוך הרוטב.\n\n\n2. אם צריך, מוסיפים קצת מים כדי שהרוטב יגיע עד חצי–שני שליש מהגובה שלהן.\n\n\n3. מכסים.\n\n\n4. מבשלים על אש נמוכה 35–40 דקות.\n\n\n5. לא לערבב בכף, רק לנענע קצת את הסיר."
+  },
+  {
+    "id": 60,
+    "title": "אורז שפנדורה",
+    "date": "3/22/26",
+    "cat": "meat",
+    "cats": [
+      "meat",
+      "rice"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/1510330254144306?sfnsn=wa&mibextid=6AJuK9"
+    ],
+    "imgs": [],
+    "html": "<p>אורז שפנדורה<br>אורז בחש בוכרי</p>",
+    "s": "אורז שפנדורה אורז שפנדורה\nאורז בחש בוכרי <this message was edited>"
+  },
+  {
+    "id": 61,
+    "title": "טפיוקה",
+    "date": "3/23/26",
+    "cat": "desserts",
+    "cats": [
+      "desserts"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/1495437815351004?sfnsn=wa&mibextid=6AJuK9"
+    ],
+    "imgs": [],
+    "html": "<p>טפיוקה</p>",
+    "s": "טפיוקה טפיוקה"
+  },
+  {
+    "id": 62,
+    "title": "פלוב",
+    "date": "3/24/26",
+    "cat": "rice",
+    "cats": [
+      "rice"
+    ],
+    "src": {
+      "type": "typed",
+      "label": "מתכון מודפס",
+      "icon": "✍️"
+    },
+    "urls": [],
+    "imgs": [],
+    "html": "<p><strong>פלוב</strong></p>\n<p>🧾 מצרכים<br>2 כוסות אורז (בסמטי)<br>500 גרם בשר בקר (כתף/צוואר), קוביות גדולות<br>1 כוס חומוס מבושל (או קופסה שטופה)<br>2 בצלים גדולים קצוצים<br>2 גזרים גדולים חתוכים לרצועות<br>4–5 שיני שום שלמות<br>1/3 כוס שמן<br>3 כוסות מים רותחים</p>\n<p>🧂 תיבול:<br>1 כפית כמון (זרעים או טחון)<br>1.5 כפיות מלח (סה״כ לכל הסיר)<br>1/2 כפית פלפל שחור</p>\n<p>אופציונלי:<br>1/2 כפית פפריקה מתוקה<br>קמצוץ כורכום</p>\n<hr class=\"rcp-hr\"/>\n<p>🔪 הכנה מוקדמת<br>שוטפים אורז ומשרים 20–30 דק׳, מסננים</p>\n<hr class=\"rcp-hr\"/>\n<p>👨‍🍳 הכנה</p>\n<p>1. צריבת הבשר<br>שמן חם מאוד<br>בשר בשכבה אחת<br>לא לגעת 3–5 דק׳ → להשחמה<br>לערבב ולצרוב מכל הצדדים</p>\n<hr class=\"rcp-hr\"/>\n<p>2. זירוואק (הבסיס)<br>מוסיפים בצל → מטגנים עד זהוב<br>מוסיפים גזר → 5–7 דק׳<br>מוסיפים חומוס</p>\n<p>👉 עכשיו מתבלים:<br>מוסיפים:</p>\n<p>1 כפית כמון</p>\n<p>1.5 כפיות מלח</p>\n<p>1/2 כפית פלפל שחור<br>(+ אופציונלי פפריקה/כורכום)</p>\n<p>מערבבים היטב</p>\n<p>מוסיפים 3 כוסות מים רותחים<br>מבשלים 20–30 דק׳</p>\n<p>⚠️ חשוב: לטעום את הנוזל — הוא צריך להיות מלוח מעט יותר מהרגיל (כי האורז יספוג)</p>\n<hr class=\"rcp-hr\"/>\n<p>3. אורז<br>מפזרים אורז מעל (לא לערבב)<br>דוחפים שום פנימה</p>\n<hr class=\"rcp-hr\"/>\n<p>4. בישול האורז<br>בודקים נוזלים:</p>\n<p>צריך להיות בגובה האורז או קצת מתחת</p>\n<p>אם חסר → מוסיפים 1/2–1 כוס מים רותחים</p>\n<p>מבשלים על אש בינונית בלי מכסה 10–15 דק׳</p>\n<p>סימנים מוכנים:</p>\n<p>אין מים למעלה</p>\n<p>יש חורים קטנים באורז</p>\n<hr class=\"rcp-hr\"/>\n<p>5. אידוי<br>מכסים<br>אש נמוכה מאוד<br>20 דקות</p>\n<hr class=\"rcp-hr\"/>\n<p>6. סיום<br>מערבבים בעדינות מלמטה למעלה</p>",
+    "s": "פלוב *פלוב*\n\n🧾 מצרכים\n2 כוסות אורז (בסמטי)\n500 גרם בשר בקר (כתף/צוואר), קוביות גדולות\n1 כוס חומוס מבושל (או קופסה שטופה)\n2 בצלים גדולים קצוצים\n2 גזרים גדולים חתוכים לרצועות\n4–5 שיני שום שלמות\n1/3 כוס שמן\n3 כוסות מים רותחים\n\n🧂 תיבול:\n1 כפית כמון (זרעים או טחון)\n1.5 כפיות מלח (סה״כ לכל הסיר)\n1/2 כפית פלפל שחור\n\nאופציונלי:\n1/2 כפית פפריקה מתוקה\nקמצוץ כורכום\n\n\n---\n\n🔪 הכנה מוקדמת\nשוטפים אורז ומשרים 20–30 דק׳, מסננים\n\n\n---\n\n👨‍🍳 הכנה\n\n1. צריבת הבשר\nשמן חם מאוד\nבשר בשכבה אחת\nלא לגעת 3–5 דק׳ → להשחמה\nלערבב ולצרוב מכל הצדדים\n\n\n\n\n---\n\n2. זירוואק (הבסיס)\nמוסיפים בצל → מטגנים עד זהוב\nמוסיפים גזר → 5–7 דק׳\nמוסיפים חומוס\n\n\n\n👉 עכשיו מתבלים:\nמוסיפים:\n\n1 כפית כמון\n\n1.5 כפיות מלח\n\n1/2 כפית פלפל שחור\n(+ אופציונלי פפריקה/כורכום)\n\n\nמערבבים היטב\n\nמוסיפים 3 כוסות מים רותחים\nמבשלים 20–30 דק׳\n\n⚠️ חשוב: לטעום את הנוזל — הוא צריך להיות מלוח מעט יותר מהרגיל (כי האורז יספוג)\n\n\n---\n\n3. אורז\nמפזרים אורז מעל (לא לערבב)\nדוחפים שום פנימה\n\n\n\n\n---\n\n4. בישול האורז\nבודקים נוזלים:\n\n\n\nצריך להיות בגובה האורז או קצת מתחת\n\nאם חסר → מוסיפים 1/2–1 כוס מים רותחים\n\n\nמבשלים על אש בינונית בלי מכסה 10–15 דק׳\n\nסימנים מוכנים:\n\nאין מים למעלה\n\nיש חורים קטנים באורז\n\n\n\n---\n\n5. אידוי\nמכסים\nאש נמוכה מאוד\n20 דקות\n\n\n\n\n---\n\n6. סיום\nמערבבים בעדינות מלמטה למעלה"
+  },
+  {
+    "id": 63,
+    "title": "קציצות סלק",
+    "date": "3/24/26",
+    "cat": "meatballs",
+    "cats": [
+      "meatballs",
+      "meat",
+      "veggies"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/1140710377395489?mibextid=6AJuK9"
+    ],
+    "imgs": [],
+    "html": "<p>קציצות סלק.<br>להוסיך לקציצות תיבול:<br>1 כפית מלח<br>1/2 כפית פלפל שחור<br>1/2–1 כפית כמון<br>1/2 כפית בהרט או פפריקה מתוקה<br>2–3 שיני שום<br>גרידת חצי לימון</p>",
+    "s": "קציצות סלק קציצות סלק. \nלהוסיך לקציצות תיבול: \n1 כפית מלח\n1/2 כפית פלפל שחור\n1/2–1 כפית כמון\n1/2 כפית בהרט או פפריקה מתוקה\n2–3 שיני שום\nגרידת חצי לימון"
+  },
+  {
+    "id": 64,
+    "title": "ריבה בריאה",
+    "date": "4/4/26",
+    "cat": "sauces",
+    "cats": [
+      "sauces",
+      "desserts"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/1454016936472840?sfnsn=wa&mibextid=6AJuK9"
+    ],
+    "imgs": [],
+    "html": "<p>ריבה בריאה</p>",
+    "s": "ריבה בריאה ריבה בריאה"
+  },
+  {
+    "id": 65,
+    "title": "עוגיות קוקוס",
+    "date": "4/4/26",
+    "cat": "desserts",
+    "cats": [
+      "desserts"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/1275815487307100?sfnsn=wa&mibextid=6AJuK9"
+    ],
+    "imgs": [],
+    "html": "<p>עוגיות קוקוס</p>",
+    "s": "עוגיות קוקוס עוגיות קוקוס"
+  },
+  {
+    "id": 67,
+    "title": "ממרח ענבים",
+    "date": "4/13/26",
+    "cat": "sauces",
+    "cats": [
+      "sauces",
+      "veggies",
+      "desserts"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/796680729723506?sfnsn=wa&mibextid=6AJu"
+    ],
+    "imgs": [],
+    "html": "<p>ממרח ענבים</p>",
+    "s": "ממרח ענבים ממרח ענבים"
+  },
+  {
+    "id": 68,
+    "title": "סימיט כמו בתורכיה",
+    "date": "4/21/26",
+    "cat": "breads",
+    "cats": [
+      "breads"
+    ],
+    "src": {
+      "type": "site",
+      "label": "קרן אגם",
+      "icon": "🍳"
+    },
+    "urls": [
+      "https://kerenagam.co.il/%d7%a1%d7%99%d7%9e%d7%99%d7%98-%d7%9b%d7%9e%d7%95-%d7%91%d7%aa%d7%95%d7%a8%d7%9b%d7%99%d7%94/"
+    ],
+    "imgs": [],
+    "html": "",
+    "s": "סימיט כמו בתורכיה "
+  },
+  {
+    "id": 69,
+    "title": "לחם תמרים אגוזים",
+    "date": "4/24/26",
+    "cat": "breads",
+    "cats": [
+      "breads"
+    ],
+    "src": {
+      "type": "site",
+      "label": "קרן אגם",
+      "icon": "🍳"
+    },
+    "urls": [
+      "https://kerenagam.co.il/%D7%9C%D7%97%D7%9D-%D7%AA%D7%9E%D7%A8%D7%99%D7%9D-%D7%95%D7%90%D7%92%D7%95%D7%96%D7%99%D7%9D-%D7%9E%D7%91%D7%A6%D7%A7-%D7%9C%D7%9C%D7%90-%D7%9C%D7%99%D7%A9%D7%94/"
+    ],
+    "imgs": [],
+    "html": "<p>לחם תמרים אגוזים<br>400 גרם קמח לבן<br>250 גרם קמח מלא</p>",
+    "s": "לחם תמרים אגוזים לחם תמרים אגוזים\n400 גרם קמח לבן\n250 גרם קמח מלא"
+  },
+  {
+    "id": 70,
+    "title": "לחם זיתים",
+    "date": "4/26/26",
+    "cat": "breads",
+    "cats": [
+      "breads"
+    ],
+    "src": {
+      "type": "share",
+      "label": "קישור משותף",
+      "icon": "🔗"
+    },
+    "urls": [
+      "https://share.google/IpZpGWrS8oXDkDbO4"
+    ],
+    "imgs": [],
+    "html": "<p>לחם זיתים<br>750 גרם קמח לבן<br>250 גרם קמח מלא</p>",
+    "s": "לחם זיתים לחם זיתים\n750 גרם קמח לבן\n250 גרם קמח מלא"
+  },
+  {
+    "id": 71,
+    "title": "קציצות עוף ברוטב סלרי ולימון",
+    "date": "4/27/26",
+    "cat": "meatballs",
+    "cats": [
+      "meatballs",
+      "meat",
+      "chicken",
+      "sauces"
+    ],
+    "src": {
+      "type": "site",
+      "label": "קרן אגם",
+      "icon": "🍳"
+    },
+    "urls": [
+      "https://kerenagam.co.il/%d7%a7%d7%a6%d7%99%d7%a6%d7%95%d7%aa-%d7%a2%d7%95%d7%a3-%d7%91%d7%a8%d7%95%d7%98%d7%91-%d7%a1%d7%9c%d7%a8%d7%99-%d7%95%d7%9c%d7%99%d7%9e%d7%95%d7%9f-%d7%a9%d7%9c-%d7%90%d7%9e%d7%90-%d7%9e%d7%aa%d7%9b/"
+    ],
+    "imgs": [],
+    "html": "<p>קציצות עוף ברוטב סלרי ולימון</p>",
+    "s": "קציצות עוף ברוטב סלרי ולימון קציצות עוף ברוטב סלרי ולימון"
+  },
+  {
+    "id": 72,
+    "title": "לחם מקמח מלא",
+    "date": "5/6/26",
+    "cat": "breads",
+    "cats": [
+      "breads"
+    ],
+    "src": {
+      "type": "site",
+      "label": "קרן אגם",
+      "icon": "🍳"
+    },
+    "urls": [
+      "https://kerenagam.co.il/%D7%9C%D7%97%D7%9D-%D7%9C%D7%9C%D7%90-%D7%9C%D7%99%D7%A9%D7%94-%D7%91%D7%A1%D7%99%D7%A8-%D7%9E%D7%A7%D7%9E%D7%97%D7%99%D7%9D-%D7%9E%D7%9C%D7%90%D7%99%D7%9D-%D7%95%D7%96%D7%99%D7%AA%D7%99%D7%9D/"
+    ],
+    "imgs": [],
+    "html": "<p>לחם מקמח מלא</p>",
+    "s": "לחם מקמח מלא לחם מקמח מלא"
+  },
+  {
+    "id": 73,
+    "title": "סלט סלק",
+    "date": "5/7/26",
+    "cat": "salads",
+    "cats": [
+      "salads",
+      "veggies"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/1210479741160803?mibextid=9drbnH&s=yWDuG2&fs=e"
+    ],
+    "imgs": [],
+    "html": "<p>סלט סלק</p>",
+    "s": "סלט סלק סלט סלק"
+  },
+  {
+    "id": 74,
+    "title": "לחמניות רכות במילוי בשר טחון",
+    "date": "5/9/26",
+    "cat": "meat",
+    "cats": [
+      "meat",
+      "breads"
+    ],
+    "src": {
+      "type": "share",
+      "label": "קישור משותף",
+      "icon": "🔗"
+    },
+    "urls": [
+      "https://share.google/dutiYAe1z3NFjTxLp"
+    ],
+    "imgs": [],
+    "html": "<p>לחמניות רכות במילוי בשר טחון - קרן אגם</p>",
+    "s": "לחמניות רכות במילוי בשר טחון לחמניות רכות במילוי בשר טחון - קרן אגם"
+  },
+  {
+    "id": 75,
+    "title": "מלבי",
+    "date": "5/10/26",
+    "cat": "desserts",
+    "cats": [
+      "desserts"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/1239087561208711?sfnsn=wa&mibextid=6AJuK9"
+    ],
+    "imgs": [],
+    "html": "<p>מלבי</p>",
+    "s": "מלבי מלבי"
+  },
+  {
+    "id": 76,
+    "title": "סלט חצילים",
+    "date": "5/14/26",
+    "cat": "salads",
+    "cats": [
+      "salads",
+      "veggies"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/2158046114737665?sfnsn=wa&mibextid=6AJuK9"
+    ],
+    "imgs": [],
+    "html": "<p>סלט חצילים</p>",
+    "s": "סלט חצילים סלט חצילים"
+  },
+  {
+    "id": 77,
+    "title": "חזה עוף ברוטב קוקוס, בוטנים ופטריות",
+    "date": "5/16/26",
+    "cat": "chicken",
+    "cats": [
+      "chicken"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/1883428272340447/?mibextid=9drbnH&s=yWDuG2&fs=e"
+    ],
+    "imgs": [],
+    "html": "<p>חזה עוף ברוטב פטריות</p>",
+    "s": "חזה עוף ברוטב קוקוס, בוטנים ופטריות חזה עוף ברוטב פטריות"
+  },
+  {
+    "id": 78,
+    "title": "ממולאים מפורקים",
+    "date": "5/18/26",
+    "cat": "meat",
+    "cats": [
+      "meat"
+    ],
+    "src": {
+      "type": "facebook",
+      "label": "סרטון פייסבוק",
+      "icon": "🎬"
+    },
+    "urls": [
+      "https://www.facebook.com/reel/997020525229043?mibextid=9drbnH&s=yWDuG2&fs=e"
+    ],
+    "imgs": [],
+    "html": "<p>ממולאים מפורקים.</p>\n<p>לשטוף היטב <strong>1.5 כוסות אורז</strong> בסמטי ואם יש זמן להשרות 15–20 דקות ולסנן; בסיר רחב לחמם שמן זית, לטגן <strong>3 שיני שום</strong> כמה שניות, להוסיף <strong>500 גרם בשר טחון</strong>, מלח ופלפל ולפורר עד שמשנה צבע; להוסיף <strong>כרוב קטן</strong> חתוך לרצועות ולבשל 10–15 דקות עד שמתרכך; להוסיף <strong>2–3 כפות רסק, 2–3 כפות סילאן, חצי מיץ לימון וכפית פפריקה</strong> אם רוצים, לערבב דקה; להוסיף את האורז ו־3 כוסות מים — או 2.75 כוסות אם האורז הושרה — לערבב פעם אחת, להביא לרתיחה, לכסות ולבשל על אש נמוכה 18–22 דקות; לכבות ולהשאיר סגור עוד 10 דקות; בסוף להוסיף <strong>כוס עשבי תיבול קצוצים</strong> ואת שאר הלימון לפי הטעם, לערבב בעדינות ולהגיש.</p>\n<p>אם אוהבים טעם יותר “ממולאים”: <strong>רבע כפית בהרט</strong> או כמון, ממש מעט.<br>אם רוצים יותר רוטביות: עגבנייה מגוררת אחת או <strong>2–3 כפות עגבניות מרוסקות יחד עם הרסק</strong>.</p>",
+    "s": "ממולאים מפורקים ממולאים מפורקים. \n\nלשטוף היטב *1.5 כוסות אורז* בסמטי ואם יש זמן להשרות 15–20 דקות ולסנן; בסיר רחב לחמם שמן זית, לטגן *3 שיני שום* כמה שניות, להוסיף *500 גרם בשר טחון*, מלח ופלפל ולפורר עד שמשנה צבע; להוסיף *כרוב קטן* חתוך לרצועות ולבשל 10–15 דקות עד שמתרכך; להוסיף *2–3 כפות רסק, 2–3 כפות סילאן, חצי מיץ לימון וכפית פפריקה* אם רוצים, לערבב דקה; להוסיף את האורז ו־3 כוסות מים — או 2.75 כוסות אם האורז הושרה — לערבב פעם אחת, להביא לרתיחה, לכסות ולבשל על אש נמוכה 18–22 דקות; לכבות ולהשאיר סגור עוד 10 דקות; בסוף להוסיף *כוס עשבי תיבול קצוצים* ואת שאר הלימון לפי הטעם, לערבב בעדינות ולהגיש.\n\nאם אוהבים טעם יותר “ממולאים”: *רבע כפית בהרט* או כמון, ממש מעט.\nאם רוצים יותר רוטביות: עגבנייה מגוררת אחת או *2–3 כפות עגבניות מרוסקות יחד עם הרסק*. <this message was edited>"
+  }
+]

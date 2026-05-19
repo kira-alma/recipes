@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ספר המתכונים של קירה</title>
+<style>
+  * { box-sizing: border-box; }
+  :root {
+    --bg: #fff8f0; --bg-soft: #fef3e2; --card: #ffffff;
+    --ink: #1f2937; --ink-soft: #4b5563; --ink-faint: #9ca3af;
+    --accent: #c2410c; --accent-soft: #fed7aa; --border: #e5e7eb;
+    --shadow: 0 2px 6px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.04);
+    --shadow-lg: 0 10px 30px rgba(0,0,0,0.15), 0 4px 10px rgba(0,0,0,0.08);
+  }
+  body {
+    margin: 0; font-family: 'Heebo','Assistant',-apple-system,system-ui,'Segoe UI',Helvetica,Arial,sans-serif;
+    background: var(--bg); color: var(--ink); line-height: 1.55; min-height: 100vh;
+  }
+  header.hero {
+    background: linear-gradient(180deg,#ffefd6 0%,#fff8f0 100%);
+    border-bottom: 1px solid var(--border); padding: 28px 24px 18px; text-align: center;
+  }
+  header.hero h1 {
+    margin: 0 0 4px; font-size: 2.1rem; font-weight: 800; letter-spacing: -0.02em; color: var(--accent);
+  }
+  .search-wrap { max-width: 720px; margin: 18px auto 0; position: relative; }
+  .search-wrap input {
+    width: 100%; padding: 12px 44px 12px 16px; font-size: 1rem; font-family: inherit;
+    border: 1.5px solid var(--border); border-radius: 12px; background: #fff; color: var(--ink);
+    box-shadow: var(--shadow); transition: border-color 0.15s, box-shadow 0.15s;
+  }
+  .search-wrap input:focus {
+    outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(194,65,12,0.15);
+  }
+  .search-wrap .ico {
+    position: absolute; inset-inline-start: 14px; top: 50%; transform: translateY(-50%);
+    font-size: 1.05rem; color: var(--ink-faint); pointer-events: none;
+  }
+  .cats { max-width: 1200px; margin: 18px auto 0; padding: 0 16px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+  .cat-chip {
+    background: #fff; border: 1.5px solid var(--border); color: var(--ink-soft);
+    padding: 7px 14px; border-radius: 999px; cursor: pointer; font-size: 0.9rem;
+    font-family: inherit; font-weight: 500; transition: all 0.15s;
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .cat-chip:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-1px); }
+  .cat-chip.active { background: var(--accent); border-color: var(--accent); color: white; }
+  .cat-chip .count { background: rgba(0,0,0,0.08); color: inherit; padding: 0 7px; border-radius: 999px; font-size: 0.78rem; font-weight: 600; }
+  .cat-chip.active .count { background: rgba(255,255,255,0.25); }
+  main { max-width: 1200px; margin: 0 auto; padding: 24px 16px 64px; }
+  .section-title { display: flex; align-items: baseline; gap: 10px; margin: 18px 0 12px; border-bottom: 2px solid var(--accent-soft); padding-bottom: 6px; }
+  .section-title h2 { margin: 0; font-size: 1.35rem; color: var(--ink); }
+  .section-title .emoji { font-size: 1.35rem; }
+  .section-title .num { color: var(--ink-faint); font-size: 0.9rem; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+  .card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 14px;
+    padding: 14px 16px; cursor: pointer; transition: transform 0.12s, box-shadow 0.12s, border-color 0.12s;
+    box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 6px; min-height: 100px; position: relative;
+  }
+  .card:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); border-color: var(--accent-soft); }
+  .card .title { font-weight: 700; font-size: 1.05rem; color: var(--ink); line-height: 1.3; }
+  .card .meta { display: flex; align-items: center; gap: 6px; font-size: 0.8rem; color: var(--ink-faint); margin-top: auto; }
+  .card .src-badge { display: inline-flex; align-items: center; gap: 4px; background: var(--bg-soft); border-radius: 999px; padding: 2px 10px; font-size: 0.78rem; color: var(--ink-soft); font-weight: 500; }
+  .card .has-content { color: #16a34a; font-size: 0.75rem; font-weight: 600; }
+  .card .has-img { font-size: 0.9rem; }
+  .modal-bg { position: fixed; inset: 0; background: rgba(0,0,0,0.55); z-index: 100; display: none; align-items: flex-start; justify-content: center; padding: 4vh 16px; overflow-y: auto; animation: fadein 0.2s; }
+  .modal-bg.open { display: flex; }
+  @keyframes fadein { from { opacity: 0 } to { opacity: 1 } }
+  .modal { background: var(--card); max-width: 720px; width: 100%; border-radius: 16px; box-shadow: var(--shadow-lg); padding: 24px 28px 28px; position: relative; margin-bottom: 5vh; }
+  .modal .close { position: absolute; top: 12px; inset-inline-start: 14px; background: var(--bg-soft); border: none; border-radius: 50%; width: 32px; height: 32px; font-size: 1.1rem; cursor: pointer; color: var(--ink-soft); transition: background 0.12s; }
+  .modal .close:hover { background: var(--accent-soft); color: var(--accent); }
+  .modal h2.recipe-title { margin: 0 0 4px; font-size: 1.55rem; color: var(--accent); padding-inline-end: 36px; line-height: 1.25; }
+  .modal .recipe-meta { display: flex; flex-wrap: wrap; gap: 10px; color: var(--ink-faint); font-size: 0.85rem; margin-bottom: 18px; }
+  .modal .recipe-meta .pill { background: var(--bg-soft); padding: 2px 10px; border-radius: 999px; }
+  .modal .external-btn { display: inline-flex; align-items: center; gap: 8px; background: var(--accent); color: white; text-decoration: none; padding: 10px 18px; border-radius: 10px; font-weight: 600; margin: 8px 8px 8px 0; transition: background 0.12s; }
+  .modal .external-btn:hover { background: #9a3208; }
+  .modal .external-btn.secondary { background: #fff; color: var(--accent); border: 1.5px solid var(--accent); }
+  .modal .images { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0; }
+  .modal .images img { max-width: 100%; max-height: 350px; border-radius: 10px; border: 1px solid var(--border); cursor: pointer; }
+  .modal .recipe-body { font-size: 1rem; color: var(--ink); margin-top: 12px; line-height: 1.7; }
+  .modal .recipe-body p { margin: 0 0 12px; }
+  .modal .recipe-body .rcp-h4 { color: var(--accent); margin: 18px 0 6px; font-size: 1.05rem; }
+  .modal .recipe-body .rcp-hr { border: none; border-top: 1px dashed var(--border); margin: 16px 0; }
+  .modal .no-content { background: var(--bg-soft); border-right: 4px solid var(--accent); padding: 14px 18px; border-radius: 8px; color: var(--ink-soft); margin-top: 8px; }
+  .empty { text-align: center; padding: 60px 16px; color: var(--ink-faint); }
+  .empty .big { font-size: 3rem; margin-bottom: 8px; }
+  .loading { text-align: center; padding: 80px 16px; color: var(--ink-faint); font-size: 0.95rem; }
+  @media (max-width: 480px) {
+    header.hero h1 { font-size: 1.55rem; }
+    .grid { grid-template-columns: 1fr; }
+    .modal { padding: 20px 18px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <h1>🥘 ספר המתכונים של קירה</h1>
+  <div class="search-wrap">
+    <input id="search" type="text" placeholder="חיפוש מתכון... למשל: עוף, סלט, אורז, שוקולד" />
+    <span class="ico">🔍</span>
+  </div>
+</header>
+
+<div class="cats" id="cats"></div>
+
+<main id="content"><div class="loading">⏳ טוען מתכונים…</div></main>
+
+<div class="modal-bg" id="modal-bg">
+  <div class="modal" id="modal"></div>
+</div>
+
+<script>
+const CATEGORIES = [["all", "הכל", "🍽️", "#6b7280"], ["breads", "לחמים ומאפים", "🍞", "#d97706"], ["salads", "סלטים", "🥗", "#16a34a"], ["soups", "מרקים", "🍲", "#dc2626"], ["rice", "אורז ודגנים", "🍚", "#ca8a04"], ["chicken", "עוף", "🍗", "#ea580c"], ["meat", "בשרים", "🥩", "#b91c1c"], ["meatballs", "קציצות", "🍡", "#7f1d1d"], ["fish", "דגים", "🐟", "#0891b2"], ["pasta", "פסטה ואטריות", "🍝", "#c2410c"], ["eggs_dairy", "פשטידות", "🥧", "#facc15"], ["sauces", "רטבים וממרחים", "🥄", "#9333ea"], ["desserts", "עוגות וקינוחים", "🍰", "#db2777"], ["drinks", "משקאות", "☕", "#7c2d12"], ["other", "שונות", "✨", "#475569"]];
+let RECIPES = [];
+let activeCat = 'all';
+let query = '';
+let modalOpen = null;
+
+// Load recipes.json (works on GitHub Pages and any http(s) host)
+async function loadRecipes() {
+  try {
+    const res = await fetch('recipes.json', { cache: 'no-cache' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    RECIPES = await res.json();
+    render();
+  } catch (err) {
+    document.getElementById('content').innerHTML =
+      `<div class="empty"><div class="big">⚠️</div>
+       <p>טעינת המתכונים נכשלה.<br>
+       וודאי שהאתר נטען מ-GitHub Pages (לא מהדיסק).</p>
+       <p style="font-size:0.8rem">${err.message}</p></div>`;
+  }
+}
+
+function getFiltered() {
+  let recs = RECIPES.slice();
+  if (activeCat !== 'all') {
+    recs = recs.filter(r => r.cat === activeCat || (r.cats && r.cats.includes(activeCat)));
+  }
+  if (query) {
+    const q = query.toLowerCase().trim();
+    if (q) recs = recs.filter(r => r.s.includes(q));
+  }
+  return recs;
+}
+
+function renderCats() {
+  const counts = {};
+  for (const r of RECIPES) counts[r.cat] = (counts[r.cat] || 0) + 1;
+  counts.all = RECIPES.length;
+  const el = document.getElementById('cats');
+  const parts = [];
+  for (const [key, label, emoji] of CATEGORIES) {
+    const c = counts[key] || 0;
+    if (key !== 'all' && c === 0) continue;
+    parts.push(
+      `<button class="cat-chip ${activeCat===key?'active':''}" data-cat="${key}">
+         <span>${emoji}</span><span>${label}</span><span class="count">${c}</span>
+       </button>`
+    );
+  }
+  el.innerHTML = parts.join('');
+  el.querySelectorAll('.cat-chip').forEach(btn => {
+    btn.addEventListener('click', () => { activeCat = btn.dataset.cat; render(); });
+  });
+}
+
+function renderRecipes() {
+  const recs = getFiltered();
+  const content = document.getElementById('content');
+  if (recs.length === 0) {
+    content.innerHTML = `<div class="empty"><div class="big">🍽️</div><p>לא נמצאו מתכונים. נסי חיפוש אחר או קטגוריה אחרת.</p></div>`;
+    return;
+  }
+  let html = '';
+  if (activeCat === 'all' && !query) {
+    const byCat = {};
+    for (const r of recs) (byCat[r.cat] = byCat[r.cat] || []).push(r);
+    for (const [key, label, emoji] of CATEGORIES) {
+      const group = byCat[key];
+      if (!group || group.length === 0) continue;
+      html += `<section>
+        <div class="section-title">
+          <span class="emoji">${emoji}</span><h2>${label}</h2><span class="num">(${group.length})</span>
+        </div>
+        <div class="grid">${group.map(cardHtml).join('')}</div>
+      </section>`;
+    }
+  } else {
+    html = `<div class="grid">${recs.map(cardHtml).join('')}</div>`;
+  }
+  content.innerHTML = html;
+  content.querySelectorAll('.card').forEach(c => {
+    c.addEventListener('click', () => openModal(parseInt(c.dataset.id, 10)));
+  });
+}
+
+function cardHtml(r) {
+  const hasContent = r.html && r.html.length > 50;
+  const hasImg = r.imgs && r.imgs.length > 0;
+  return `<div class="card" data-id="${r.id}">
+    <div class="title">${escapeHtml(r.title)}</div>
+    <div class="meta">
+      <span class="src-badge">${r.src.icon} ${r.src.label}</span>
+      ${hasImg ? '<span class="has-img" title="כולל תמונה">📷</span>' : ''}
+      ${hasContent ? '<span class="has-content">מתכון מלא</span>' : ''}
+    </div>
+  </div>`;
+}
+
+function escapeHtml(s) {
+  return (s||'').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#39;"})[ch]);
+}
+
+function openModal(id) {
+  const r = RECIPES.find(x => x.id === id);
+  if (!r) return;
+  modalOpen = id;
+  const modal = document.getElementById('modal');
+
+  let imgHtml = '';
+  if (r.imgs && r.imgs.length) {
+    imgHtml = '<div class="images">' +
+      r.imgs.map(path => `<img src="${path}" alt="recipe photo" onclick="window.open(this.src, '_blank')"/>`).join('') +
+      '</div>';
+  }
+
+  let linksHtml = '';
+  if (r.urls && r.urls.length) {
+    linksHtml = r.urls.map((u, i) => {
+      const label = i === 0 ? `${r.src.icon} פתחי את המקור` : `קישור נוסף ${i+1}`;
+      const cls = i === 0 ? 'external-btn' : 'external-btn secondary';
+      return `<a class="${cls}" href="${u}" target="_blank" rel="noopener">${label}</a>`;
+    }).join('');
+  }
+
+  let contentBlock = r.html;
+  if (!contentBlock || contentBlock.trim().length < 20) {
+    if (r.urls && r.urls.length) {
+      contentBlock = `<div class="no-content">📎 המתכון נמצא בקישור החיצוני. לחצי על הכפתור למעלה כדי לפתוח את המקור.</div>`;
+    } else if (r.imgs && r.imgs.length) {
+      contentBlock = `<div class="no-content">📷 המתכון מופיע בתמונה למעלה.</div>`;
+    } else {
+      contentBlock = `<div class="no-content">אין פרטים נוספים.</div>`;
+    }
+  }
+
+  modal.innerHTML = `
+    <button class="close" id="close-modal" title="סגירה">✕</button>
+    <h2 class="recipe-title">${escapeHtml(r.title)}</h2>
+    <div class="recipe-meta">
+      <span class="pill">${r.src.icon} ${r.src.label}</span>
+      <span class="pill">📅 ${escapeHtml(r.date)}</span>
+    </div>
+    ${linksHtml}
+    ${imgHtml}
+    <div class="recipe-body">${contentBlock}</div>
+  `;
+  document.getElementById('modal-bg').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  document.getElementById('close-modal').addEventListener('click', closeModal);
+}
+
+function closeModal() {
+  modalOpen = null;
+  document.getElementById('modal-bg').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.getElementById('modal-bg').addEventListener('click', (e) => {
+  if (e.target.id === 'modal-bg') closeModal();
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && modalOpen !== null) closeModal();
+});
+document.getElementById('search').addEventListener('input', (e) => {
+  query = e.target.value;
+  render();
+});
+
+function render() { renderCats(); renderRecipes(); }
+loadRecipes();
+</script>
+</body>
+</html>
