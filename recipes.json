@@ -580,16 +580,15 @@
       "chicken"
     ],
     "src": {
-      "type": "facebook",
-      "label": "סרטון פייסבוק",
-      "icon": "🎬"
+      "type": "typed",
+      "label": "מתכון מודפס",
+      "icon": "✍️"
     },
-    "urls": [
-      "https://www.facebook.com/reel/1649176279080955/?sfnsn=wa&mibextid=6AJuK9"
-    ],
+    "urls": [],
     "imgs": [],
-    "html": "<p>חזה עוף</p>",
-    "s": "חזה עוף חזה עוף"
+    "html": "<p>Mix:<br>1 tbsp mustard<br>1 tsp honey<br>1 tsp balsamic<br>1 tbsp olive oil<br>Salt + pepper<br>Optional: paprika / garlic powder / chili / cumin<br>How:<br>Slice chicken into thin strips or small cutlets.<br>Mix with sauce. Even 10 minutes is enough.<br>Heat pan medium-high, add a little oil.<br>Cook chicken 3–4 min per side if thin.<br>In the last minute, brush/add a little extra honey-mustard so it gets glossy. Don’t add too early because honey can burn.</p>",
+    "s": "חזה עוף mix:\n1 tbsp mustard\n1 tsp honey\n1 tsp balsamic\n1 tbsp olive oil\nsalt + pepper\noptional: paprika / garlic powder / chili / cumin\nhow:\nslice chicken into thin strips or small cutlets.\nmix with sauce. even 10 minutes is enough.\nheat pan medium-high, add a little oil.\ncook chicken 3–4 min per side if thin.\nin the last minute, brush/add a little extra honey-mustard so it gets glossy. don’t add too early because honey can burn.",
+    "_raw": "Mix:\n1 tbsp mustard\n1 tsp honey\n1 tsp balsamic\n1 tbsp olive oil\nSalt + pepper\nOptional: paprika / garlic powder / chili / cumin\nHow:\nSlice chicken into thin strips or small cutlets.\nMix with sauce. Even 10 minutes is enough.\nHeat pan medium-high, add a little oil.\nCook chicken 3–4 min per side if thin.\nIn the last minute, brush/add a little extra honey-mustard so it gets glossy. Don’t add too early because honey can burn."
   },
   {
     "id": 29,
